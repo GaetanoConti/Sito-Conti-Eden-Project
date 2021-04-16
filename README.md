@@ -21,7 +21,7 @@ _L'idea è di creare un sito interattivo che permetta ad un azienda di prodotti 
       * La quantità disponibile del prodotto al momento
       * Un selezionatore per scegliere la quantità desiderata
       * Una descrizione del prodotto
-      * La possibilità di aggiungerlo al carrello (solo dopo aver selzionato la quantità)
+      * La possibilità di aggiungerlo al carrello (solo dopo aver selezionato la quantità)
   * **Carrello**:
     * Nel carrello ci dovrà essere:
       * La lista dei prodotti selezionati, con le relative quantità
