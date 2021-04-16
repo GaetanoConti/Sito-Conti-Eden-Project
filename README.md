@@ -35,7 +35,8 @@ _L'idea è di creare un sito interattivo che permetta ad un azienda di prodotti 
         * Ordini in corso, in cui viene ricordata la data in cui deve venire a prendere i prodotti (se asporto) o la data di consegna (se consegna)
   * **L'azienda**
     * Questa sezione dovrà contenere:
-      *  
+      *  Una piccola descrizione sulla storia e l'idea della azienda
+      *  Una sezione contatti (con numero di telefono, mail, etc.)
 ***
 ## Il sito dovrà essere utilizzato:
 * [Lato Cliente](#lato-cliente)
