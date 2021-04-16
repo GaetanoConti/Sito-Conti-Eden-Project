@@ -27,6 +27,12 @@ _L'idea è di creare un sito interattivo che permetta ad un azienda di prodotti 
       * La lista dei prodotti selezionati, con le relative quantità
       * Una checkbox per dire se si vuole ordinare da asporto o per consegna
       * Un tasto per effettuare l'ordine
+  * **Sezione personale Utente**:
+    * Nella sezione profilo dell'utente sarà presente:
+      * La sezione dati personali (nome, cognome, mail, password, indirizzo, etc.)
+      * Le sezione Ordini effettutati, così suddivisa:
+        * Storico ordini, contenente i vecchi ordini effettuati dall'utente, sotto ognuno dovrà esserci il tasto 'ripeti ordine'
+        * Ordini in corso, in cui viene ricordata la data in cui deve venire a prendere i prodotti (se asporto) o la data di consegna (se consegna)   
 ***
 ## Il sito dovrà essere utilizzato:
 * [Lato Cliente](#lato-cliente)
@@ -49,7 +55,7 @@ L'utente deve poter consultare i suoi ordini effettuati nel tempo, e se lo desid
 L'utente deve poter ricercare tra i prodotti quelli che desidera filtrando per categoria, nome e caratteristiche
 #### Gestione carrello
 L'utente deve poter riempire il carrello con i prodotti selezionati, dal carrello ci sarà la possibilità di prenotare i prodotti, in due modalità: Asporto o Consegna
-***
+
 ## Lato Azienda
   ### Funzionalità da implementare
   1. [Controllo prenotazioni](#controllo-prenotazioni)
