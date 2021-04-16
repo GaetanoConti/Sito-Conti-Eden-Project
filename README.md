@@ -6,6 +6,30 @@ _L'idea è di creare un sito interattivo che permetta ad un azienda di prodotti 
 ## Il sito dovrà essere utilizzato:
 * [Lato Cliente](#lato-cliente)
 * [Lato Azienda](#lato-azienda)
+
+## Il sito dovrà avere la seguente struttura:
+  * **Homepage**:
+    * L'homepage dovrà contenere:
+      * Il logo aziendale  
+      * Una barra di ricerca, dove l'utente può cercare un prodotto scrivendo il suo nome
+      * Le categorie principali in cui sono divisi i prodotti in vendita
+      * I prodotti in evidenza in quel momento
+      * Una sezione in cui fare login e registarsi
+      * Una sezione di informazioni su azienda e contatti
+  * **Ricerca**:
+    * Una volta effettutata una ricerca l'utente deve poter:
+      * Filtrare i prodotti per tipologia, quantità disponibile e prezzo (al kg)
+      * Entrare nella scheda prodotto
+  * **Scheda prodotto**:
+    * Nella scheda prodotto ci dovrà essere:
+      * La quantità disponibile del prodotto al momento
+      * Un selezionatore per scegliere la quantità desiderata
+      * Una descrizione del prodotto
+      * La possibilità di aggiungerlo al carrello (solo dopo aver selzionato la quantità)
+  * **Carrello*:
+    * Nel carrello ci dovrà essere:
+      * La lista dei prodotti selezionati, con le relative quantità
+      * Una checkbox per dire se si vuole ordinare da asporto o per consegna       
 ## Lato Cliente
   ### Funzionalità da implementare
   1. [Registrazione e login](#registrazione-e-login)
