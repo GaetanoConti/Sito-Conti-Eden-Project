@@ -9,15 +9,17 @@ _L'idea è di creare un sito interattivo che permetta ad un azienda di prodotti 
       * Il logo aziendale  
       * Una barra di ricerca, dove l'utente può cercare un prodotto scrivendo il suo nome
       * Le categorie principali in cui sono divisi i prodotti in vendita
-      * I prodotti in evidenza in quel momento
+      * I prodotti in evidenza in quel momento, con foto e quantità
       * Una sezione in cui fare login e registrarsi
       * Una sezione di informazioni su azienda e contatti
   * **Ricerca**:
     * Una volta effettutata una ricerca l'utente deve poter:
       * Filtrare i prodotti per tipologia, quantità disponibile e prezzo (al kg)
-      * Entrare nella scheda prodotto
+      * EVisualizzare le schede prodotto con nome, foto e quantità disponibili
+      * Entrare in una scheda prodotto
   * **Scheda prodotto**:
     * Nella scheda prodotto ci dovrà essere:
+      * Una foto del prodotto 
       * La quantità disponibile del prodotto al momento
       * Un selezionatore per scegliere la quantità desiderata
       * Una descrizione del prodotto
@@ -36,7 +38,9 @@ _L'idea è di creare un sito interattivo che permetta ad un azienda di prodotti 
   * **L'azienda**
     * Questa sezione dovrà contenere:
       *  Una piccola descrizione sulla storia e l'idea della azienda
-      *  Una sezione contatti (con numero di telefono, mail, etc.)
+      *  Qualche foto dell'azienda
+      *  Una sezione contatti (con indirizzo, numero di telefono, mail, etc.)
+      *  Un collegamento Google Maps all'indirizzo dell'azienda
 ***
 ## Il sito dovrà essere utilizzato:
 * [Lato Cliente](#lato-cliente)
