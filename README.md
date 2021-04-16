@@ -30,14 +30,17 @@ L'utente deve poter riempire il carrello con i prodotti selezionati, dal carrell
       - [Prenotazioni asporto](#prenotazioni-asporto)
       - [Prenotazioni consegna](#prenotazioni-consegna)   
   2. [Aggiornamento disponibilità](#aggiornamento-disponibilità)
+  3. [Prodotti in evidenza](#prodotti-in-evidenza)
 
 #### Controllo prenotazioni
 ##### Prenotazioni asporto
-L'azienda deve poter tener conto di tutte le prenotazioni, con nome cliente, quantità di prodotti e giorno di arrivo del cliente per l'asporto
+L'azienda deve poter tener conto di tutte le prenotazioni, con nome cliente, lista dell'ordine (prodotto/quantità) e giorno di arrivo del cliente per l'asporto
 ##### Prenotazioni consegna
-L'azienda deve poter tener conto di tutte le prenotazioni, con nome cliente, quantità di prodotti e indirizzo del cliente che ha effettuato l'ordine, e preferenza sul momento di consegna
+L'azienda deve poter tener conto di tutte le prenotazioni, con nome cliente, lista dell'ordine (prodotto/quantità), indirizzo del cliente che ha effettuato l'ordine, e preferenza sul momento di consegna
 #### Aggiornamento disponibilità
 L'azienda deve poter:
   * aggiornare le disponibilità di un prodotto
   * inserire un nuovo prodotto, con nome, descrizione, categoria e quantità
   * rimuovere un prodotto dalle disponibilità
+#### Prodotti in evidenza
+L'azienda deve poter, in ogni momento, aggiornare la sezione 'prodotti in evidenza' con i prodotti che desidera
