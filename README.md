@@ -7,20 +7,20 @@ L'idea è di creare un sito interattivo che permetta ad un azienda di prodotti o
 * [Lato Cliente](#lato-cliente)
 * [Lato Azienda](#lato-azienda)
 ## Lato Cliente
-## Funzionalità da implementare
-1. [Registrazione e login](#registrazione-e-login)
-2. [Ricerca prodotti](#ricerca-prodotti)
-3. [Gestione carrello](#gestione-carrello)
-### Registrazione e login
+  ### Funzionalità da implementare
+  1. [Registrazione e login](#registrazione-e-login)
+  2. [Ricerca prodotti](#ricerca-prodotti)
+  3. [Gestione carrello](#gestione-carrello)
+#### Registrazione e login
 L'utente deve poter registrarsi al sito prima di poter fare prenotazioni, ed effettuare il login in qualunque momento
-### Ricerca prodotti
+#### Ricerca prodotti
 L'utente deve poter ricercare tra i prodotti quelli che desidera filtrando per categoria, nome e caratteristiche
-### Gestione carrello
+#### Gestione carrello
 L'utente deve poter riempire il carrello con i prodotti selezionati, dal carrello ci sarà la possibilità di prenotare i prodotti, in due modalità: Asporto o Consegna
 ***
 ## Lato Azienda
-## Funzionalità da implementare
-1. [Gestione lato server](#gestione-lato-server)
+  ### Funzionalità da implementare
+  1. [Gestione lato server](#gestione-lato-server)
 
-### Gestione lato server
+#### Gestione lato server
 L'azienda deve poter tener conto di tutte le prenotazioni, aggiornare i prodotti (con le relative quantità) disponibili, e inserire e rimuovere prodotti dalla disponibilità
