@@ -1,7 +1,7 @@
 # Sito Conti Eden Project
 Sito di prenotazione prodotti per azienda ortofrutticola locale
 ## Idea
-L'idea è di creare un sito interattivo che permetta ad un azienda di prodotti ortofrutticoli locale e ai suoi clienti di gestire le prenotazioni sui propri prodotti, per poi acquistarli direttamente in negozio oppure farseli consegnare a domicilio
+_L'idea è di creare un sito interattivo che permetta ad un azienda di prodotti ortofrutticoli locale e ai suoi clienti di gestire le prenotazioni sui propri prodotti, per poi acquistarli direttamente in negozio oppure farseli consegnare a domicilio_
 ***
 ## Il sito dovrà essere utilizzato:
 * [Lato Cliente](#lato-cliente)
