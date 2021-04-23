@@ -1,0 +1,196 @@
+<html>
+
+<head>
+  <title>Conti Eden</title>
+  <meta charset="utf−8" />
+  <meta name="viewport" content="width=device−width, initial−scale=1.0" />
+  <!--width=device−width rende responsive la pagina     -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> <!-- usa il css di bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+  <!--navbar-->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <a class="navbar-brand" href="#">Conti Eden</a>
+
+
+    <div class="col">
+      <!--form di ricerca-->
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Cerca" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerca</button>
+      </form>
+    </div>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="immagini/icona_carrello2x.png" alt="carrello" width="30" height="30" class="d-inline-block align-top"
+          alt="">
+        Carrello
+      </a>
+    </nav>
+
+
+
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="immagini/home.png" alt="azienda" width="30" height="30" class="d-inline-block align-top" alt="">
+        L'azienda
+      </a>
+    </nav>
+
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="immagini/account.png" alt="account" width="30" height="30" class="d-inline-block align-top" alt="">
+        Accedi|Registrati
+      </a>
+    </nav>
+    </div>
+  </nav>
+
+
+
+</head>
+
+<!--  <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--  <ul class="navbar-nav mr-auto">-->
+<!--bottone account drop down-->
+<!-- <li class="nav-item active">-->
+<!--   <div class="dropdown show">-->
+<!--     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"--></a>
+<!--       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--        Accedi-->
+<!--     </a>-->
+<!--       login dropdown-->
+<!--      <div class="dropdown-menu">-->
+<!--        <form class="px-4 py-3">-->
+<!--        <div class="form-group">-->
+<!--          <label for="exampleDropdownFormEmail1">Email address</label>-->
+<!--           <input type="email" class="form-control" id="exampleDropdownFormEmail1"-->
+<!--             placeholder="email@example.com">-->
+<!--        </div>-->
+<!--         <div class="form-group">-->
+<!--            <label for="exampleDropdownFormPassword1">Password</label>-->
+<!--           <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">-->
+<!--         </div>-->
+<!--         <div class="form-check">-->
+<!--            <input type="checkbox" class="form-check-input" id="dropdownCheck">-->
+<!--             <label class="form-check-label" for="dropdownCheck">-->
+<!--               Ricordamii-->
+<!--            </label>  -->
+<!--             </div>-->
+<!--           <button type="submit" class="btn btn-primary">Log in</button>-->
+<!--          </form>-->
+<!--          <div class="dropdown-divider"></div>-->
+<!--         <a class="dropdown-item" href="#">Non hai un account? Iscriviti</a>-->
+<!--         <a class="dropdown-item" href="#">Password dimenticata?</a>-->
+<!--       </div>-->
+<!--      </div>-->
+<!--   </li>-->
+
+
+<!--fine bottone accesso-->
+
+
+
+
+
+
+<body>
+
+
+
+  <!---->
+  <!--allineamento del carousel al centro-->
+  <!--  <div class="w-75 h-50 p-3">-->
+  <!-- dimensione carosusel-->
+
+  <!--componente carousel-->
+
+  <div class="container-lg">
+    <div align="center"></div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <!--primo elemnto-->
+
+        <div class="carousel-item active">
+          <img class="d-block w-100 h-50" src="immagini/pomodori_prova_carousel.jpg" alt="First slide">
+        </div>
+        <!-- problema se si mette la dimensioen dell'immagine a d-block w-75 h-50
+          e si toglie il ridiemnsioamento fatto dopo l'allineamento viene formattato meglio ma i tatsti 
+        non sranno sull'immagine ma lateralmente -->
+
+
+        <div class="carousel-item">
+          <!--secondo elemnto-->
+          <img class="d-block w-100 h-50" src="immagini/miele_prova_carousel.jpg" alt="Second slide">
+        </div>
+
+
+        <div class="carousel-item">
+          <!--terzo elemnto-->
+          <img class="d-block w-100 h-50" src="immagini/mele_prova_carousel.jpg" alt="Second slide">
+        </div>
+
+        <!--gestione pulsanti avanti e indietro per denug metetre i pulsanti scuri aggiungendo alla classe carousel control
+          bg-dark -->
+        <a class="carousel-control-prev " href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a> <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+      <!--chiusura carosello-->
+    </div>
+    <!--chiusura allinemaneto-->
+  </div>
+  <!--chiusura container-->
+  <br>
+  <div>
+    <div class="container-lg">
+      <h2>I nostri prodotti</h2>
+      <br>
+
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="immagini/mele_prova_carousel.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Frutta</h5>
+            <p class="card-text">Non penso sia necessario spiegare cos'è la frutta</p>
+            <a href="#" class="btn btn-primary">Vai ai prodotti</a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="immagini/miele_prova_carousel.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Verdura</h5>
+            <p class="card-text">Non penso sia necessario spiegare cos'è la frutta</p>
+            <a href="#" class="btn btn-primary">Vai ai prodotti</a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
