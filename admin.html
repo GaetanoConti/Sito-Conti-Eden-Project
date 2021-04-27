@@ -1,0 +1,28 @@
+<html>
+<head>
+    <h1>Pagina di inserimetno dei prodotti nel db</h1>
+</head>
+    <form  action="inserimentoProdotti.php" method="POST" >
+    Nome prodotto:        
+    <input type="text" name="inputProdotto"
+    placeholder="Nome prodotto" required autofocus/><br>
+    Categoria
+    <select name="categoria">
+        <option value="Frutta">Frutta</option>
+        <option value="Verdura">Verdura</option>
+        <option value="Altro">Altro</option>
+    </select><br>
+    Prezzo (in euro):
+    <input type="number" step="0.01" name="prezzo"
+    placeholder="" required autofocus/><br>
+    <input type="radio" name="tipoQauntita" value="chilo" onclick="valoreSesso=this.value;">chilo
+    <input type="radio" name="tipoQauntita" value="confezione" onclick="valoreSesso=this.value;">confezione<br>
+
+    Quantità disponibile:
+    <input type="number" step="0.01" name="quantita"
+    placeholder="" required autofocus/><br>
+    <button type="submit" >Submit </button>
+</form>
+
+
+</html>
