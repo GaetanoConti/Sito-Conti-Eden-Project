@@ -177,7 +177,7 @@ blockquote{
     <link rel="icon" href="immagini/logo.jpg">
      <!--navbar-->
 	 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
-		<a class="navbar-brand" href="#">Conti Eden</a>
+		<a class="navbar-brand" href="index3.php">Conti Eden Project</a>
 		<div class="col">
 		  <!--form di ricerca-->
 		  <form class="form-inline my-2 my-lg-0">
@@ -200,14 +200,14 @@ blockquote{
 		</nav>
 	
 		<nav class="navbar navbar-light bg-light">
-		  <a class="navbar-brand" href="login.html">
+		  <a class="navbar-brand" href="paginaLogin.php">
 			<img src="immagini/account.png" alt="account" width="30" height="30" class="d-inline-block align-top" alt="">
 			Accedi
 		  </a>
 		  <a class="navbar-brand">
 			|
 		  </a>
-		  <a class="navbar-brand" href="registrazione.html">
+		  <a class="navbar-brand" href="paginaRegistrazione.php">
 			Registrati
 		  </a>
 		</nav>
