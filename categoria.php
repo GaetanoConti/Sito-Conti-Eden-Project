@@ -105,10 +105,11 @@ $nome=$_GET['nome'];
 
                     <div class="card h-100">
                     <?php $file="immagini\\";
+
                         $file .= $rows['fotoprodotto'];
                         echo $file;
                         ?> 
-                    <img  src="immagini/fragole_gallery1.jpg" style=  max-width: 150px style= max-height: 50px;  class="card-img-top" alt="...">
+                    <img  src= <?php echo $file; ?> style=  max-width: 150px style= max-height: 50px;  class="card-img-top" alt="...">
                         <div class="card-body">
                         <?php
      
@@ -126,19 +127,29 @@ $nome=$_GET['nome'];
                 </div>
 
                 <div class="col">
+                    
+            <?php $nome="Farina";  
+                $q1 = "select * from prodotti where nome='$nome'";
+                $result= pg_query_params($dbconn, $q1, array());
+                    while($rows=pg_fetch_array($result,null, PGSQL_ASSOC))  {
+                 ?>
+                
+              <div class="col">
+
                     <div class="card h-100">
-                        <img src="immagini/fragole_gallery1.jpg" class="card-img-top" alt="...">
+                    <?php $file="immagini\\";
+
+                        $file .= $rows['fotoprodotto'];
+                        echo $file;
+                        ?> 
+                    <img  src= <?php echo $file; ?> style=  max-width: 150px style= max-height: 50px;  class="card-img-top" alt="...">
                         <div class="card-body">
+                        <?php
 
-                            <?php $nome="Farina";  
                            echo "<h2> $nome </h2>";     
-                           $q1 = "select * from prodotti where nome='$nome'";
-
-                           $result= pg_query_params($dbconn, $q1, array());
-                           while($rows=pg_fetch_array($result,null, PGSQL_ASSOC))  {
-                         ?><?php
+                          } ?>
                            echo "<h4>"; echo $rows['prezzo']; echo " € a "; echo $rows['tipoquantita']; echo "</h4>";            
-                            } ?>   
+                           
                         <div  class="btn btn-primary">
                             <?php  echo "<a href=../scheda_prodotto.php?nome=$nome> Acquista prodotto </a>"?>                        
                         </div>
@@ -186,6 +197,27 @@ $nome=$_GET['nome'];
                         </div> 
                     </div>
                
+                    <div class="col">
+                    <div class="card h-100">
+                        <img src="immagini/fragole_gallery1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                            <?php $nome="Uova";  
+                           echo "<h2> $nome </h2>";     
+                           $q1 = "select * from prodotti where nome='$nome'";
+
+                           $result= pg_query_params($dbconn, $q1, array());
+                           while($rows=pg_fetch_array($result,null, PGSQL_ASSOC))  {
+                         ?><?php
+                           echo "<h4>"; echo $rows['prezzo']; echo " € a "; echo $rows['tipoquantita']; echo "</h4>";            
+                            } ?>   
+                        <div  class="btn btn-primary">
+                            <?php  echo "<a href=../scheda_prodotto.php?nome=$nome> Acquista prodotto </a>"?>                        
+                        </div>
+                        </div>
+                        </div> 
+                    </div>
+
                 </div>
             </div>
         </div>

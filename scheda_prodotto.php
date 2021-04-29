@@ -13,11 +13,10 @@ $nome=$_GET['nome'];
 
   }
 <head>
-  <title>Nome prodotto</title>
+  <title><?php $rows['nome'] ?></title>
   <meta charset="utf−8" />
   <meta name="viewport" content="width=device−width, initial−scale=1.0" />
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> <!-- usa il css di bootstrap -->
-  <script type="text/javascript" lang="javascript" src="js/scheda_prodotto.js"></script>
 
 
   <!--navbar-->
@@ -68,66 +67,57 @@ $nome=$_GET['nome'];
   <br>
 
 
-  <div class="position-static">
+  
 
-    
-  <div class="container mx-1" style="margin-top:3%; ;">
-      <div class="btn-group-md" role="group" aria-label="Basic example">
-          <a href="categoria.php" class="btn btn-primary" style="margin-right: 10;">Frutta</a>
-          <a href="categoria.php" class="btn btn-primary" style="margin-right: 10;">Verdura</a>
-          <a href="categoria.php" class="btn btn-primary" style="margin-right: 10;">Altro</a>
-      </div>
-    </div>
-    </div>
-    <hr>
-
-
-    <!--ESEMPIO:
-        https://mdbootstrap.com/previews/ecommerce-demo/examples/pages/basic/product.html
-        https://www.carrefour.it/p/sant-anna-sorgente-rebruant-1950-m-naturale-6-x-15-l/8020141810001.html -->
-
-    
-
-
-      
-
-
-
-    <div class="container-md my-5 mx-lg-5">
-      <div class="row">
-        <div class="col">
-          <img src="immagini/fragole_gallery4.jpg" width="450px" height="350px">
-        </div>
-        <div class="col">
-          <?php 
-            $nome=$_GET['nome'];
-            echo "<h2>";echo $nome; echo "</h2>";
-            echo "<h3> In "; echo $rows['categoria']; echo "</h3>";
-          ?>
-
-          <p>Questa è una breve descrizione del prodotto, Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-            an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-          <div class="form-group row">
-      
-            <label for="example-number-input" class="col-4 col-form-label">Quntità in     <?php  echo $rows['tipoquantita'];?>: </label>
-            <div class="col-3">
-              <input class="form-control" type="number" value="<?php echo  $rows['quantita'] ?>" min="0.001" step="0.001" id="example-number-input">
-            </div>
-         
-            <div class="col">
-              <?php  
-              echo "<h4>"; echo $rows['prezzo']; echo " € a "; echo $rows['tipoquantita']; echo "</h4>";
-            
-            
-              ?>
-              </div>
+      <div class="position-static">
+        <div class="container mx-1" style="margin-top:3%; ;">
+          <div class="btn-group-md" role="group" aria-label="Basic example">
+            <a href="categoria.php" class="btn btn-primary" style="margin-right: 10;">Frutta</a>
+            <a href="categoria.php" class="btn btn-primary" style="margin-right: 10;">Verdura</a>
+            <a href="categoria.php" class="btn btn-primary" style="margin-right: 10;">Altro</a>
           </div>
+        </div>
+     </div>
+    
+  <hr>    
 
-          <button type="button" class="btn btn-primary">Aggiungi al carrello</button>
+
+
+  <div class="container-md my-5 mx-lg-5">
+   
+  
+    <div class="row">
+      <div class="col">
+        <img src="immagini/fragole_gallery4.jpg" width="450px" height="350px">
+      </div>
+
+
+      <div class="col">
+        <?php 
+          $nome=$_GET['nome'];
+          echo "<h2>";echo $nome; echo "</h2>";
+          echo "<h5> In "; echo $rows['categoria']; echo "</h5>";
+        ?>
+        <label for="example-number-input"><h4>Quntità in     <?php  echo $rows['tipoquantita'];?>:  </h4> </label>
+        <input class="col-2" class="form-control"  type="number" value="<?php echo  $rows['quantita'] ?>" min="0.001" step="0.001" id="example-number-input">
+       
+        <?php echo "<h3>"; echo $rows['prezzo']; echo " € a "; echo $rows['tipoquantita']; echo "</h3>";?>
+
+          <?php if ($rows['quantita']>0 ) {
+          ?>
+            <button type="button" name="bottoneAcquista" class="btn btn-primary">
+            <img src="immagini/icona_carrello2x white.png" alt="carrello" width="30" height="30" class="d-inline-block align-top">
+            Aggiungi al carrello
+            
+            </button>
+
+            <?php } else {  ?>
+              <h4> <span class="badge bg-danger">Al momento non disponibile</span></h4>
+
+            <?php  } ?>
 
         </div>
-
+          </div>
       </div>
 
 
