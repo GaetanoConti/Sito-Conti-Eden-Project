@@ -46,6 +46,16 @@ else {
           <li><a href="eliminaprodotto.php?nome=Altro">Altro</a></li>
       </ul>
     </div>
+    <div class="btn-group btn-group-justified">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Visualizza prodotti <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu">
+        <li><a href="visualizzaProdotti.php?nome=Tutti">Tutti</a></li>
+          <li><a href="visualizzaProdotti.php?nome=Frutta">Frutta</a></li>
+          <li><a href="visualizzaProdotti.php?nome=Verdura">Verdura</a></li>
+          <li><a href="visualizzaProdotti.php?nome=Altro">Altro</a></li>
+        </ul>
+      </div>
   </div>
 </div>
 
