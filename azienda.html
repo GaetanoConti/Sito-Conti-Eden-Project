@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script>
+    function ringraziamento() {
+      alert("Grazie per il tuo commento!");
+    }
+  </script>
   <title>Chi siamo</title>
   <link rel="icon" href="immagini/logo.jpg">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel = "stylesheet" href = "bootstrap-social.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
@@ -13,7 +21,7 @@
   <style>
     body,
     html {
-      background-color: #fff
+      background-color: #fae9dd
     }
   body {
     font: 400 15px/1.8 Lato, sans-serif;
@@ -79,6 +87,7 @@
     color: #f1f1f1;
     border-radius: 0;
     transition: .2s;
+    
   }
   .btn:hover, .btn:focus {
     border: 1px solid #333;
@@ -97,12 +106,6 @@
   .nav-tabs li a {
     color: #777;
   }
-  #googleMap {
-    width: 100%;
-    height: 400px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-  }  
   .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
@@ -135,18 +138,7 @@
   .dropdown-menu li a:hover {
     background-color: red !important;
   }
-  footer {
-    background-color: #2d2d30;
-    color: #f5f5f5;
-    padding: 32px;
-  }
-  footer a {
-    color: #f5f5f5;
-  }
-  footer a:hover {
-    color: #777;
-    text-decoration: none;
-  }  
+
   .form-control {
     border-radius: 0;
   }
@@ -168,7 +160,7 @@
     }
   </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -178,7 +170,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      <a class="navbar-brand" href="index3.php">Logo</a>
     </div>
   </div>
 </nav>
@@ -287,7 +279,16 @@
         Rieti, Lazio, Via Salaria, km 74/500</p>
       <p><span class="glyphicon glyphicon-phone"></span>Telefono: +39 123456789</p>
       <p><span class="glyphicon glyphicon-envelope"></span>Email: contiedenpoject@mail.com</p>
+      <div>
+      <a class = "btn btn-social-icon btn-facebook" href = "https://www.facebook.com/Conti-Eden-Project-105988287794834">
+        <span class = "fa fa-facebook"></span>
+     </a>    
+     <a class = "btn btn-social-icon btn-instagram" href = "https://www.instagram.com/contiedenproject/">
+      <span class = "fa fa-instagram"></span>
+   </a>   
+  </div>    
     </div>
+    <form action="contatti.php" method="POST" onsubmit="return ringraziamento();">
     <div class="col-md-8">
       <div class="row">
         <div class="col-sm-6 form-group">
@@ -301,10 +302,11 @@
       <br>
       <div class="row">
         <div class="col-md-12 form-group">
-          <button class="btn pull-right" type="submit">Invia</button>
+          <button class="btn pull-right" name="submit" type="submit">Invia</button>
         </div>
       </div>
     </div>
+  </form>
   </div>
 <br>
   <h3 class="text-center">Sviluppatori del sito</h3>  
@@ -324,38 +326,5 @@
     </div>
   </div>
 </div>
-
-
-<script>
-$(document).ready(function(){
-  // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip(); 
-  
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-})
-</script>
-
 </body>
 </html>
