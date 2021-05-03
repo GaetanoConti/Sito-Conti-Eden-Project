@@ -1,0 +1,32 @@
+
+###########CREAZIONE DATABASE PRODOTTI############
+
+create table prodotti (
+	id serial not null,
+	nome varchar(100) not null primary key,
+	categoria varchar(20) not null,
+	prezzo real not null,
+	tipoQuantita varchar(20) not null,
+	quantita real not null,
+	fotoProdotto varchar(100) not null,
+	descrizione varchar(1000) not null
+);
+
+############CREAZIONE DATABASE CONTATTI###########
+
+create table contattaci (
+	nome varchar(100) not null,
+	email varchar(100) not null,
+	commento varchar(1000) not null
+)
+
+
+#############CREAZIONE DATABASE ACCOUNT###########
+
+create table accounts (
+	email varchar(100) not null primary key,
+	password varchar(32) not null,
+	nome varchar(100) not null,
+	cognome varchar(100) not null,
+	telefono bigint not null
+)

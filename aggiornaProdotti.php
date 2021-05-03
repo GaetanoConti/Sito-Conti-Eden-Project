@@ -9,13 +9,11 @@
     user=postgres password=password") 
     or die('Could not connect: ' . pg_last_error());
 
-        $nome = $_POST["prodotto"];
+        $id = $_POST["IDprodotto"];
         $quantita = $_POST["quantita"];
-        $q1 = "update prodotti set quantita = quantita + '$quantita' where nome='$nome'";
+        $q1 = "update prodotti set quantita = quantita + '$quantita' where id='$id'";
         $data = pg_query($dbconn, $q1);
             if( $data ) {                
-                echo "<h1>Prodotto modificato correttamente
-                 <br/></h1>" ;
                 header("Location: ../latoaziendale.php");
             }
 

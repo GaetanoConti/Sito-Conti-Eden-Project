@@ -9,14 +9,12 @@
     user=postgres password=password") 
     or die('Could not connect: ' . pg_last_error());
 
-        $nome = $_POST["prodotto"];
-        $q1 = "delete from prodotti where nome='$nome'";
+        $id= $_POST["IDprodotto"];
+        $q1 = "delete from prodotti where id='$id'";
         $data = pg_query($dbconn, $q1);
             if( $data ) {                
                 header("Location: ../latoaziendale.php");
             }
-
-
 ?>
 </body>
 </html>

@@ -5,7 +5,7 @@ user=postgres password=password")
 or die('Could not connect: ' . pg_last_error());
 
 $nome=$_GET['nome'];
-$query="select * from prodotti where categoria ='$nome';"; 
+$query="select * from prodotti where categoria = '$nome'"; 
 $res = pg_exec($query);
 $nrows = pg_numrows($res);
 
@@ -29,7 +29,7 @@ $nrows = pg_numrows($res);
 
     <div class="position-absolute"></div>
         <nav class="navbar fixed-top  navbar-expand-lg navbar-light bg-light">
-             <a class="navbar-brand" href="#">Conti Eden</a>
+             <a class="navbar-brand" href="#">Conti Eden Project</a>
             <div class="col">
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Cerca" aria-label="Search">
@@ -73,14 +73,14 @@ $nrows = pg_numrows($res);
 
         <div class="container mx-1" style="margin-top:3%; ;">
             <div class="btn-group-md" role="group" aria-label="Basic example">
-                <a href="categoria.html" class="btn btn-primary" style="margin-right: 10;">Frutta</a>
-                <a href="categoria.html" class="btn btn-primary" style="margin-right: 10;">Verdura</a>
-                <a href="categoria.html" class="btn btn-primary" style="margin-right: 10;">Altro</a>
+                <a href="categoria.php?nome=Frutta" class="btn btn-primary" style="margin-right: 10;">Frutta</a>
+                <a href="categoria.php?nome=Verdura" class="btn btn-primary" style="margin-right: 10;">Verdura</a>
+                <a href="categoria.php?nome=Altro" class="btn btn-primary" style="margin-right: 10;">Altro</a>
             </div>
         </div>
         <hr>
         <div align=center>
-            <h1>Nome categoria</h1>
+            <h1><?php echo $nome ?></h1>
         </div>
 
         <br>
@@ -89,7 +89,7 @@ $nrows = pg_numrows($res);
               <?php  if($nrows != 0) {
                     for($i=0;$i<$nrows;$i++){
                     $row = pg_fetch_array($res);
-                    $nomeprodotto = $row['nome'];    ?>
+                    $IDprodotto = $row['id'];    ?>
                     <div class="col my-3">
                        
 
@@ -103,9 +103,18 @@ $nrows = pg_numrows($res);
                                     echo "<h2>";  echo $row['nome']; echo  "</h2>";     
                                     echo "<h4>"; echo $row['prezzo']; echo " € a "; echo $row['tipoquantita']; echo "</h4>";            
                                  ?>   
-                                <div  class="btn btn-primary">
-                                    <?php  echo "<a href='../scheda_prodotto.php?nome=$nomeprodotto' > Acquista prodotto </a>"?>                                                       
-                                </div>
+                                    <?php if ($row['quantita']>0 ) {
+                                 ?>
+                                    <div  class="btn btn-primary">
+                                        <?php  echo "<a href=../scheda_prodotto.php?nome=$IDprodotto> Acquista prodotto </a>"?>                                                       
+                                    </div>
+                             <?php } else {  ?>
+                                <h4> <span class="badge bg-danger">Al momento non disponibile</span></h4>
+                                     <div  class="btn btn-primary">
+                                        <?php  echo "<a href=../scheda_prodotto.php?nome=$IDprodotto> Acquista prodotto </a>"?>                                                       
+                                    </div>
+                                <?php  } ?>
+                                
                             </div>
                         </div>
                     </div>

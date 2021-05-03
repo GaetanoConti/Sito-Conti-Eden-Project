@@ -5,7 +5,7 @@ dbname=ContiEdenProject
 user=postgres password=password") 
 or die('Could not connect: ' . pg_last_error());
 $nome=$_GET['nome'];
-$query = "select nome from prodotti where categoria='$nome';";
+$query = "select * from prodotti where categoria='$nome';";
 $result= pg_query($dbconn, $query);
 ?>
 <html>
@@ -15,15 +15,19 @@ $result= pg_query($dbconn, $query);
 <body>
 <form  action="aggiornaProdotti.php" method="POST" >
     Nome prodotto:        
-<select name="prodotto">
-<option value="" selected></option>
-<?php 
-while ($row = pg_fetch_array($result, null, PGSQL_ASSOC))
-{
-    echo "<option value=".$row['nome'].">".$row['nome']."</option>";
-}
-?>        
-</select>
+<select name="IDprodotto">
+        <option value="" selected></option>
+        <?php 
+        while ($row = pg_fetch_array($result, null, PGSQL_ASSOC))
+        {
+            echo "<option value=".$row["id"].">".$row["nome"]."</option>";    
+
+        }
+        
+        ?>        
+        </select>
+    
+        
 <br>
 <br>    
 

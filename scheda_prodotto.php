@@ -4,8 +4,8 @@
   dbname=ContiEdenProject
   user=postgres password=password") 
   or die('Could not connect: ' . pg_last_error());
-$nome=$_GET['nome'];
-  $q1 = "select * from prodotti where nome= '$nome'";
+  $id=$_GET['nome'];
+  $q1 = "select * from prodotti where id= '$id'";
 
   $result= pg_query_params($dbconn, $q1, array());
   while($rows=pg_fetch_array($result,null, PGSQL_ASSOC))  {
@@ -93,18 +93,17 @@ $nome=$_GET['nome'];
       <div class="col">
          <?php $file="immagini\\";
               $file .= $rows['fotoprodotto'];?>                
-        <img <img  src= <?php echo $file; ?>  width="450px" height="350px">
+        <img src= <?php echo $file; ?>  width="450px" height="350px">
       </div>
 
 
       <div class="col">
         <?php 
-          $nome=$_GET['nome'];
-          echo "<h2>";echo $nome; echo "</h2>";
+          echo "<h2>";echo $rows['nome']; echo "</h2>";
           echo "<h5> In "; echo $rows['categoria']; echo "</h5>";
         ?>
         <label for="example-number-input"><h4>Quntità in     <?php  echo $rows['tipoquantita'];?>:  </h4> </label>
-        <input class="col-2" class="form-control"  type="number" value="" max= <?php echo  $rows['quantita'] ?> min="0.1" step="0.1" id="example-number-input">
+        <input class="col-2" class="form-control"  type="number" value="" max= <?php echo $rows['quantita'] ?> min="0.0" step="0.1" id="example-number-input">
         <?php  echo "<h5>Disponibili: ";  echo  $rows['quantita']; echo "</h5>"; ?>
 
         <?php echo "<h3>"; echo $rows['prezzo']; echo " € a "; echo $rows['tipoquantita']; echo "</h3>";?>

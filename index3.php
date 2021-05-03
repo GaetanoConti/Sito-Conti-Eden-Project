@@ -118,7 +118,7 @@
         <!--primo elemnto-->
 
         <div class="carousel-item active">
-          <img class="d-block w-100 h-50" src="immagini/pomodori_prova_carousel.jpg" alt="First slide">
+          <img class="d-block w-100 h-50" src="immagini/logo.jpg" alt="First slide">
         </div>
         <!-- problema se si mette la dimensioen dell'immagine a d-block w-75 h-50
           e si toglie il ridiemnsioamento fatto dopo l'allineamento viene formattato meglio ma i tatsti 
@@ -127,13 +127,13 @@
 
         <div class="carousel-item">
           <!--secondo elemnto-->
-          <img class="d-block w-100 h-50" src="immagini/miele_prova_carousel.jpg" alt="Second slide">
+          <img class="d-block w-100 h-50" src="immagini/prova2.jpg" alt="Second slide">
         </div>
 
 
         <div class="carousel-item">
           <!--terzo elemnto-->
-          <img class="d-block w-100 h-50" src="immagini/mele_prova_carousel.jpg" alt="Second slide">
+          <img class="d-block w-100 h-50" src="immagini/prova3.jpg" alt="Second slide">
         </div>
 
         <!--gestione pulsanti avanti e indietro per denug metetre i pulsanti scuri aggiungendo alla classe carousel control
@@ -164,7 +164,7 @@
           <div class="card-body">
             <h5 class="card-title">Frutta</h5>
             <p class="card-text">Non penso sia necessario spiegare cos'è la frutta</p>
-            <a href="categoria.php" class="btn btn-primary">Vai ai prodotti</a>
+            <a href="categoria.php?nome=Frutta" class="btn btn-primary">Vai ai prodotti</a>
           </div>
         </div>
         <div class="card">
@@ -172,7 +172,7 @@
           <div class="card-body">
             <h5 class="card-title">Verdura</h5>
             <p class="card-text">Non penso sia necessario spiegare cos'è la frutta</p>
-            <a href="categoria.php" class="btn btn-primary">Vai ai prodotti</a>
+            <a href="categoria.php?nome=Verdura" class="btn btn-primary">Vai ai prodotti</a>
           </div>
         </div>
         <div class="card">
@@ -180,7 +180,7 @@
           <div class="card-body">
             <h5 class="card-title">Altro</h5>
             <p class="card-text">Non penso sia necessario spiegare cos'è la frutta</p>
-              <a href="categoria.php" class="btn btn-primary">Vai ai prodotti</a>
+              <a href="categoria.php?nome=Altro" class="btn btn-primary">Vai ai prodotti</a>
 
             </div>
         </div>
