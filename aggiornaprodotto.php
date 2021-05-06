@@ -32,7 +32,7 @@ $result= pg_query($dbconn, $query);
 <br>    
 
 Quantità da aggiungere:
-    <input type="number" min="0.1" step="0.1" name="quantita"
+    <input type="number" step="0.1" name="quantita"
     placeholder="" required autofocus/><br>
     
 <button type="submit" >Aggiorna </button>

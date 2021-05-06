@@ -1,4 +1,20 @@
 <?php
+  session_start(); 
+  if (isset($_COOKIE['username']) || isset($_SESSION['username'])) {
+    if ((isset($_COOKIE['username']))) {
+    $_SESSION['username'] = $_COOKIE['username'];
+    }
+    ?>
+   <script>var fileNavbar='navbar_login.html';</script> 
+<?php
+    }
+else {  ?>
+  <script>      var fileNavbar='navbar_registrazione.html';  </script> 
+  <?php
+}
+    ?>
+
+<?php
 $dbconn = pg_connect("host=localhost port=5432
 dbname=ContiEdenProject
 user=postgres password=password") 
@@ -16,9 +32,10 @@ $nrows = pg_numrows($res);
 <title>Categoria </title>
     <meta charset="utf−8" />
     <meta name="viewport" content="width=device−width, initial−scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> <!-- usa il css di bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css_site/index_style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" lang="javascript" src="js/scheda_prodotto.js"></script>
-    <!--navbar-->
     <style type="text/css">
     a:link, a:visited , a:visited , a:hover, a:active{
         color: white;
@@ -26,45 +43,27 @@ $nrows = pg_numrows($res);
     }
     </style>
 
+<script>
 
-    <div class="position-absolute"></div>
-        <nav class="navbar fixed-top  navbar-expand-lg navbar-light bg-light">
-             <a class="navbar-brand" href="#">Conti Eden Project</a>
-            <div class="col">
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Cerca" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerca</button>
-                </form>
-            </div>
-            <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="#">
-                    <img src="immagini/icona_carrello2x.png" alt="carrello" width="30" height="30"
-                        class="d-inline-block align-top" alt=""> Carrello
-                </a>
-            </nav>
+    $(function() {
+      var includi =$('[data-include]');
+      jQuery.each(includi, function(){
+
+      $(this).load(fileNavbar);
+       });
+    });
 
 
-            <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="#">
-                    <img src="immagini/home.png" alt="azienda" width="30" height="30" class="d-inline-block align-top"
-                        alt="">  L'azienda
-                </a>
-             </nav>
+  </script>
 
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img src="immagini/account.png" alt="account" width="30" height="30" class="d-inline-block align-top"
-                    alt=""> Accedi|Registrati
-            </a>
-        </nav>
-    </div>
-    </nav>
-</div>
-
+  <div data-include="header"></div>
 </head>
 
 <body>
 
+    <br>
+    <br>
+    <br>
     <br>
     <br>
 

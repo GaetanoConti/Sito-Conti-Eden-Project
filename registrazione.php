@@ -5,7 +5,7 @@
     user=postgres password=password") 
     or die('Could not connect: ' . pg_last_error());
 if (!(isset($_POST["registrationButton"]))) {
-    header("Location:../index3.php"); 
+    header("Location:../index.php"); 
 }
 else {
     $email = $_POST["mail"];
