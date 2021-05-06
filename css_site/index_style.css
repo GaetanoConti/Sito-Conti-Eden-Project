@@ -1,0 +1,35 @@
+br {
+    line-height: 100%;
+ }
+   .inline {
+   display: inline;
+ }
+
+ .navbar-brand {
+   background: none;
+   border: none;
+ }
+ .carousel-item {
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+ .link-button {
+   background: none;
+   border: none;
+   color: black;
+   cursor: pointer;
+   font-size: 1em;
+   font-family: serif;
+ }
+ .link-button:focus {
+   outline: none;
+ }
+ .link-button:active {
+   color:red;
+ }
+ .container-lg {
+   height: 500px;
+ }
+ .carousel-item img{
+     min-height: 500px;
+ }
