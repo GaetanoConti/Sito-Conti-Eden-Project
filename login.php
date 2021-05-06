@@ -4,14 +4,11 @@ $dbconn = pg_connect("host=localhost port=5432
 dbname=ContiEdenProject
 user=postgres password=password") 
 or die('Could not connect: ' . pg_last_error());
+
 if (!(isset($_POST["loginButton"]))) {
-    header("Location:../index3.php"); 
-}
-if (!(isset($_POST["loginButton"]))) {
-    header("Location:../index3.php"); 
+    header("Location:../index.php"); 
 }
 else {
-    $message = "Email errata";
     $email = $_POST["mail"];
     $q1 = "select * from accounts where email= $1";
     $result= pg_query_params($dbconn, $q1, array($email));
@@ -28,9 +25,18 @@ else {
             header("Location:../paginaLogin.php");
         }
         else {
+            if ($email == 'contieden@project.it') {
+                $_SESSION['username'] = $email;
+                header("Location: latoaziendale.php");
+            }
+            else {
+            if (isset($_POST['rememberme'])) {
             setcookie("username", $email, time()+86400 *365, "/");
             $_SESSION['username'] = $_COOKIE['username'];
-            header("Location: index3.php");
+            }
+            $_SESSION['username'] = $email;
+            header("Location: index.php");
+        }
         }
     }
 }

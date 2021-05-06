@@ -5,7 +5,7 @@ dbname=ContiEdenProject
 user=postgres password=password") 
 or die('Could not connect: ' . pg_last_error());
 if (($_SESSION["username"] <> 'contieden@project.it')) {
-  header("Location:../index3.php"); 
+  header("Location:../index.php"); 
   ?>
 <?php
 }
