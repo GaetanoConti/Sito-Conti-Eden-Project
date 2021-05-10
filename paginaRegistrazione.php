@@ -40,43 +40,40 @@ else {
     <title>Registrazione</title>
     <link rel="icon" href="immagini/logo.jpg">
      <!--navbar-->
-	 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
-		<a class="navbar-brand" href="index.php">Conti Eden Project</a>
-		<div class="col">
-		  <!--form di ricerca-->
-		  <form class="form-inline my-2 my-lg-0">
-			<input class="form-control mr-sm-2" type="search" placeholder="Cerca" aria-label="Search">
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerca</button>
-		  </form>
-		</div>
-		<nav class="navbar navbar-light bg-light">
-		  <a class="navbar-brand" href="#">
-			<img src="immagini/icona_carrello2x.png" alt="carrello" width="30" height="30" class="d-inline-block align-top"
-			  alt="">
-			Carrello
-		  </a>
-		</nav>
-		<nav class="navbar navbar-light bg-light">
-		  <a class="navbar-brand" href="azienda.html">
-			<img src="immagini/home.png" alt="azienda" width="30" height="30" class="d-inline-block align-top" alt="">
-			L'azienda
-		  </a>
-		</nav>
-	
-		<nav class="navbar navbar-light bg-light">
-		  <a class="navbar-brand" href="paginaLogin.php">
-			<img src="immagini/account.png" alt="account" width="30" height="30" class="d-inline-block align-top" alt="">
-			Accedi
-		  </a>
-		  <a class="navbar-brand">
-			|
-		  </a>
-		  <a class="navbar-brand" href="paginaRegistrazione.php">
-			Registrati
-		  </a>
-		</nav>
-		</div>
-	  </nav>
+     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <a class="navbar-brand" href=".">Conti Eden Project</a>
+
+      <div class="col">
+         
+      </div>
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="immagini/icona_carrello2x.png" alt="carrello" width="30" height="30" class="d-inline-block align-top"
+            alt="">
+          Carrello
+        </a>
+      </nav>
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="azienda.php">
+          <img src="immagini/home.png" alt="azienda" width="30" height="30" class="d-inline-block align-top" alt="">
+          L'azienda
+        </a>
+      </nav>
+    
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="paginaLogin.php">
+                <img src="immagini/account.png" alt="account" width="30" height="30" class="d-inline-block align-top" alt="">
+                Accedi
+              </a>
+              <a class="navbar-brand">
+                |
+              </a>
+              <a class="navbar-brand" href="paginaRegistrazione.php">
+                Registrati
+              </a>
+        </nav>
+        </div>
+      </nav>
     </head>
     <body>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
@@ -183,6 +180,7 @@ else {
 
 <br>
 <br>
+
 
     </body>
     </html>

@@ -34,9 +34,13 @@ else {  ?>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> <!-- usa il css di bootstrap -->
   <link rel="stylesheet" type="text/css" href="css_site/index_style.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style type="text/css">
+    a:link, a:visited , a:visited , a:hover, a:active{
+        color: white;
+        font-family: “Helvetica Neue”, Helvetica, Arial, sans-serif;
+    }
+    </style>
 
-
-  
 <script>
 
 $(function() {
@@ -51,24 +55,18 @@ $(function() {
 </script>
 
 <div data-include="header"></div>
-</head>
+
 </head>
 
 <body>
 
+<br>
   <br>
   <br>
   <br>
   <br>
-  <br>
-
-
-
-                    
-  
-
       <div class="position-static">
-        <div class="container mx-1" style="margin-top:3%; ;">
+        <div class="container mx-1" style="margin-top:3%;">
           <div class="btn-group-md" role="group" aria-label="Basic example">
             <a href="categoria.php?nome=Frutta" class="btn btn-primary" style="margin-right: 10;">Frutta</a>
             <a href="categoria.php?nome=Verdura" class="btn btn-primary" style="margin-right: 10;">Verdura</a>
@@ -81,14 +79,16 @@ $(function() {
 
 
 
-  <div class="container-md my-5 mx-lg-5">
-   
-  
+  <div class="container-md my-5 mx-lg-6">  
+  <div class="card">
+
+<div class="card-body">
     <div class="row">
       <div class="col">
+     
          <?php $file="immagini\\";
               $file .= $rows['fotoprodotto'];?>                
-        <img src= <?php echo $file; ?>  width="450px" height="350px">
+   <img src= <?php echo $file; ?> class="border " width="450px" height="350px">
       </div>
 
 
@@ -97,6 +97,7 @@ $(function() {
           echo "<h2>";echo $rows['nome']; echo "</h2>";
           echo "<h5> In "; echo $rows['categoria']; echo "</h5>";
         ?>
+        <p style="font-size:18px"><?php echo $rows['descrizione'];?> </p>
         <label for="example-number-input"><h4>Quntità in     <?php  echo $rows['tipoquantita'];?>:  </h4> </label>
         <input class="col-2" class="form-control"  type="number" value="" max= <?php echo $rows['quantita'] ?> min="0.0" step="0.1" id="example-number-input">
         <?php  echo "<h5>Disponibili: ";  echo  $rows['quantita']; echo "</h5>"; ?>
@@ -120,36 +121,79 @@ $(function() {
           </div>
       </div>
 
+      </div>
+      </div>
+      </div>
+      </div>
 
 
     </div>
 
+<?php
+ 
+    $qrandom = "select * from prodotti where random() < 0.5 limit 1; ";
+    $resRandom= pg_query($dbconn, $qrandom);
+    $nRows = pg_numrows($resRandom);
+    $stack = array();
+      
 
 
-    <div class="container-md my-5 mx-lg-5">
-      <div class="card text-center">
-        <div class="card-header">
-          <ul class="nav nav-pills card-header-pills">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Informazioni generali</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Dettagli di produzione</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Ingredienti</a>
-            </li>
-          </ul>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+?>
+    <div class="container-md my-5 mx-lg-6">
+  
+      <div>
+    <h2>Prodotti consigliati</h2>    </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4 my-3">
+
+              <?php  if($nRows != 0) {
+                    for($i=0;$i<3;$i++){
+                      $resRandom= pg_query($dbconn, $qrandom);
+                      $rowsRandom = pg_fetch_array($resRandom);
+                      while ($rowsRandom['id'] == $rows['id'] || in_array($rowsRandom['id'],$stack) || $rowsRandom['quantita'] == 0){
+                        $resRandom= pg_query($dbconn, $qrandom);
+                        $rowsRandom = pg_fetch_array($resRandom);
+                      }
+                      array_push($stack, $rowsRandom['id']);
+                    $IDprodotto = $rowsRandom['id'] ??= 'default value';    ?>
+                    <div class="col my-3">
+                       
+
+                        <div class="card h-100">
+                            <?php $file="immagini\\";
+                                $file .= $rowsRandom['fotoprodotto'] ??= 'default value';?> 
+                            <img  src= <?php echo $file; ?> width="350" height="250"  class="card-img-top" alt="...">                  
+                            
+                            <div class="card-body">
+                                <?php
+                                    echo "<h2>";  echo $rowsRandom['nome'] ??= 'default value'; echo  "</h2>";     
+                                    echo "<h4>"; echo $rowsRandom['prezzo'] ??= 'default value'; echo " € a "; echo $rowsRandom['tipoquantita'] ??= 'default value'; echo "</h4>";            
+                                 ?>   
+                                    <?php if ($rowsRandom['quantita'] ??= 'default value' >0 ) {
+                                 ?>
+                                    <div  class="btn btn-primary">
+                                        <?php  echo "<a href=../scheda_prodotto.php?nome=$IDprodotto> Acquista prodotto </a>"?>                                                       
+                                    </div>
+                             <?php } else {  ?>
+                                <h4> <span class="badge bg-danger">Al momento non disponibile</span></h4>
+                                     <div  class="btn btn-primary">
+                                     <?php  echo "<a href=../scheda_prodotto.php?nome=$IDprodotto> Acquista prodotto </a>"?>                                                       
+                                                
+                                    </div>
+                                <?php  } ?>
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                    <?php }}}?>
+
+
+
+            </div>              
         </div>
       </div>
     </div>
   </div>
-<?php 
-  }
-?>
+
 </body>
 </html>

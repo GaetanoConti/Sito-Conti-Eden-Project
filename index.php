@@ -14,7 +14,7 @@
   
 else {  ?>
 
-  <script>      var fileNavbar='navbar_registrazione.html';  </script> 
+  <script>var fileNavbar='navbar_registrazione.html';  </script> 
   <?php
     
 }
@@ -23,7 +23,7 @@ else {  ?>
 <base href="index.php">
 <link rel="stylesheet" type="text/css" href="css_site/index_style.css" />
 <title>Conti Eden Project</title>
-<link rel="icon" href="immagini/logo.jpg">
+<link rel="icon" href="immagini/logo1.jpg">
   <meta charset="utf−8" />
   <meta name="viewport" content="width=device−width, initial−scale=1.0" />
   <!--width=device−width rende responsive la pagina     -->
@@ -31,8 +31,6 @@ else {  ?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-  
   <script>
 
     $(function() {
@@ -57,12 +55,19 @@ else {  ?>
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
       </ol>
 
       <div class="carousel-inner">
         <!--primo elemnto-->
 
         <div class="carousel-item active">
+          <a href="azienda.php"> <img class="d-block w-100 h-50" src="immagini/logo1.jpg" alt="Zero slide" ></a>
+          <div class= "carousel-caption d-none d-md-block">
+         </div>
+        </div>
+
+        <div class="carousel-item">
           <a href="scheda_prodotto.php?nome=6"> <img class="d-block w-100 h-50" src="immagini/mieleevidenza.jpeg" alt="First slide" ></a>
           <div class= "carousel-caption d-none d-md-block">
             <h3 style=" font-weight:bold;">Miele di agrumi dei monti Iblei</h3>
@@ -120,7 +125,7 @@ else {  ?>
           <img class="card-img-top" src="immagini/frutta.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Frutta</h5>
-            <p class="card-text">Non penso sia necessario spiegare cos'è la frutta</p>
+            <p class="card-text">Assapora la nostra deliziosa frutta, ti sorprenderemo </p>
             <a href="categoria.php?nome=Frutta" class="btn btn-primary">Vai ai prodotti</a>
           </div>
         </div>
@@ -128,7 +133,7 @@ else {  ?>
           <img class="card-img-top" src="immagini/verdura.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Verdura</h5>
-            <p class="card-text">Non penso sia necessario spiegare cos'è la frutta</p>
+            <p class="card-text">Gusta il sapore autentico della verdura dei nostri campi</p>
             <a href="categoria.php?nome=Verdura" class="btn btn-primary">Vai ai prodotti</a>
           </div>
         </div>
@@ -136,7 +141,7 @@ else {  ?>
           <img class="card-img-top" src="immagini/altro.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Altro</h5>
-            <p class="card-text">Non penso sia necessario spiegare cos'è la frutta</p>
+            <p class="card-text">Uova, farina, miele, scopri tutti i nostri prodotti</p>
               <a href="categoria.php?nome=Altro" class="btn btn-primary">Vai ai prodotti</a>
 
             </div>
