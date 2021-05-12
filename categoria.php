@@ -4,10 +4,19 @@
     if ((isset($_COOKIE['username']))) {
     $_SESSION['username'] = $_COOKIE['username'];
     }
-    ?>
-   <script>var fileNavbar='navbar_login.html';</script> 
-<?php
-    }
+    if ($_SESSION['username'] == 'contieden@project.it') {
+        ?>
+        
+        
+       <script>var fileNavbar='navbar_azienda.html';</script> 
+    <?php
+        }
+        else {
+          ?>
+          <script>var fileNavbar='navbar_login.php';</script> 
+          <?php
+        }
+        }
 else {  ?>
   <script>      var fileNavbar='navbar_registrazione.html';  </script> 
   <?php
@@ -85,6 +94,7 @@ $nrows = pg_numrows($res);
         <br>
         <div class="container-sm">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
+                    
               <?php  if($nrows != 0) {
                     for($i=0;$i<$nrows;$i++){
                     $row = pg_fetch_array($res);

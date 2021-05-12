@@ -4,10 +4,19 @@
     if ((isset($_COOKIE['username']))) {
     $_SESSION['username'] = $_COOKIE['username'];
     }
-    ?>
-   <script>var fileNavbar='navbar_login.html';</script> 
-<?php
-    }
+    if ($_SESSION['username'] == 'contieden@project.it') {
+      ?>
+      
+      
+     <script>var fileNavbar='navbar_azienda.html';</script> 
+  <?php
+      }
+      else {
+        ?>
+        <script>var fileNavbar='navbar_login.php';</script> 
+        <?php
+      }
+      }
 else {  ?>
   <script>      var fileNavbar='navbar_registrazione.html';  </script> 
   <?php
@@ -98,20 +107,21 @@ $(function() {
           echo "<h5> In "; echo $rows['categoria']; echo "</h5>";
         ?>
         <p style="font-size:18px"><?php echo $rows['descrizione'];?> </p>
-        <label for="example-number-input"><h4>Quntità in     <?php  echo $rows['tipoquantita'];?>:  </h4> </label>
-        <input class="col-2" class="form-control"  type="number" value="" max= <?php echo $rows['quantita'] ?> min="0.0" step="0.1" id="example-number-input">
+        <label for="example-number-input"><h4>Quantità in     <?php  echo $rows['tipoquantita'];?>:  </h4> </label>
+        <form action="transizionecarrello.php?action=add&id=<?php echo $id ?>" method="POST" name="registr">
+        <input name ="inputquantita" class="col-2" class="form-control"  type="number" value="" max= <?php echo $rows['quantita'] ?> min="0.0" step="0.1" id="example-number-input" required>
         <?php  echo "<h5>Disponibili: ";  echo  $rows['quantita']; echo "</h5>"; ?>
 
         <?php echo "<h3>"; echo $rows['prezzo']; echo " € a "; echo $rows['tipoquantita']; echo "</h3>";?>
 
           <?php if ($rows['quantita']>0 ) {
           ?>
-            <button type="button" name="bottoneAcquista" class="btn btn-primary">
+            
+            <button type="submit" name="bottoneAcquista" class="btn btn-primary">
             <img src="immagini/icona_carrello2x white.png" alt="carrello" width="30" height="30" class="d-inline-block align-top">
             Aggiungi al carrello
-            
             </button>
-
+          </form>
             <?php } else {  ?>
               <h4> <span class="badge bg-danger">Al momento non disponibile</span></h4>
 

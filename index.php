@@ -5,10 +5,16 @@
     if ((isset($_COOKIE['username']))) {
     $_SESSION['username'] = $_COOKIE['username'];
     }
+    if ($_SESSION['username'] == 'contieden@project.it') {
     ?>
-    
-   <script>var fileNavbar='navbar_login.html';</script> 
+   <script>var fileNavbar='navbar_azienda.html';</script> 
 <?php
+    }
+    else {
+      ?>
+      <script>var fileNavbar='navbar_login.php';</script> 
+      <?php
+    }
     }
 
   
