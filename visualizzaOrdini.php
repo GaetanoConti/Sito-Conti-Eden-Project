@@ -29,7 +29,7 @@ $datainizio=$_POST['datainizio'];
 $datafine=$_POST['datafine'];
 
 if ($modalita <> 'tutti') {
-    $query="select ord.id, acc.nome, acc.cognome, ord.telefono, ord.giorno, ord.fasciaoraria, ord.prezzofinale, ord.modalita from ordini ord,accounts acc where ord.modalita='$modalita' and ord.giorno >= '$datainizio' and ord.giorno <= '$datafine' and ord.cliente = acc.email;"; 
+    $query="select ord.id, acc.nome, acc.cognome, ord.telefono, ord.giorno, ord.fasciaoraria, ord.prezzofinale, ord.modalita from ordini ord,accounts acc where ord.modalita='$modalita' and ord.giorno >= '$datainizio' and ord.giorno <= '$datafine' and ord.cliente = acc.email order by ord.giorno;"; 
     $res = pg_exec($query);
     $nrows = pg_numrows($res);?>
     
@@ -109,7 +109,7 @@ if ($modalita <> 'tutti') {
 }
 
 else {
-    $query="select ord.id, acc.nome, acc.cognome, ord.telefono, ord.giorno, ord.fasciaoraria, ord.prezzofinale, ord.modalita from ordini ord,accounts acc where ord.giorno >= '$datainizio' and ord.giorno <= '$datafine' and ord.cliente = acc.email;"; 
+    $query="select ord.id, acc.nome, acc.cognome, ord.telefono, ord.giorno, ord.fasciaoraria, ord.prezzofinale, ord.modalita from ordini ord,accounts acc where ord.giorno >= '$datainizio' and ord.giorno <= '$datafine' and ord.cliente = acc.email order by ord.giorno;"; 
     $res = pg_exec($query);
     $nrows = pg_numrows($res);?>
     
