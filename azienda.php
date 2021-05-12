@@ -6,7 +6,7 @@
     }
     ?>
     
-    <script>var fileNavbar='navbar_login.html';</script> 
+    <script>var fileNavbar='navbar_login.php';</script> 
 <?php
     }
 

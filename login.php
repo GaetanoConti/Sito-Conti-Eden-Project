@@ -25,18 +25,14 @@ else {
             header("Location:../paginaLogin.php");
         }
         else {
-            if ($email == 'contieden@project.it') {
-                $_SESSION['username'] = $email;
-                header("Location: latoaziendale.php");
-            }
-            else {
+            
             if (isset($_POST['rememberme'])) {
             setcookie("username", $email, time()+86400 *365, "/");
             $_SESSION['username'] = $_COOKIE['username'];
             }
             $_SESSION['username'] = $email;
             header("Location: index.php");
-        }
+        
         }
     }
 }
