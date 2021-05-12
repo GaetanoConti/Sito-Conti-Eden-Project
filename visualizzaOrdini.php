@@ -60,7 +60,7 @@ if ($modalita <> 'tutti') {
         <th width="10px"><?php  print  $row['modalita']  ?></th>
         <th width="10px"> <?php print $row['giorno'] ?></th>
         <th width="10px"><?php print $row['fasciaoraria'] ?></th>
-        <th width="10px"><?php print $row['prezzofinale'] ?></th>
+        <th width="10px"><?php print $row['prezzofinale'] ?>€</th>
         </tr>
       </table>
       
@@ -74,7 +74,7 @@ if ($modalita <> 'tutti') {
     
       <?php
         $id = $row['id'];
-        $query2="select nomeprodotto,quantita,prezzototale from ordini_prodotti where id_ordine='$id'";
+        $query2="select o.id,o.nomeprodotto,o.quantita,o.prezzototale,p.tipoquantita from ordini_prodotti o, prodotti p where id_ordine='$id' and p.id=o.prodotto";
         $res2 = pg_exec($query2);
         $nrows2 = pg_numrows($res2);
     
@@ -84,8 +84,8 @@ if ($modalita <> 'tutti') {
             
             <tr>
         <th width="10px"><?php  print  $rows['nomeprodotto']  ?></th>
-            <th width="10px"> <?php print $rows['quantita'] ?></th>
-            <th width="10px"><?php print $rows['prezzototale'] ?></th>
+            <th width="10px"> <?php print $rows['quantita'] ?> <?php print $rows['tipoquantita'] ?></th>
+            <th width="10px"><?php print $rows['prezzototale'] ?>€</th>
             </tr> 
             
     <?php
@@ -140,7 +140,7 @@ else {
         <th width="10px"><?php  print  $row['modalita']  ?></th>
         <th width="10px"> <?php print $row['giorno'] ?></th>
         <th width="10px"><?php print $row['fasciaoraria'] ?></th>
-        <th width="10px"><?php print $row['prezzofinale'] ?></th>
+        <th width="10px"><?php print $row['prezzofinale'] ?>€</th>
         </tr>
       </table>
       
@@ -154,7 +154,7 @@ else {
     
       <?php
         $id = $row['id'];
-        $query2="select nomeprodotto,quantita,prezzototale from ordini_prodotti where id_ordine='$id'";
+        $query2="select o.id,o.nomeprodotto,o.quantita,o.prezzototale,p.tipoquantita from ordini_prodotti o, prodotti p where id_ordine='$id' and p.id=o.prodotto";
         $res2 = pg_exec($query2);
         $nrows2 = pg_numrows($res2);
     
@@ -164,8 +164,8 @@ else {
             
             <tr>
         <th width="10px"><?php  print  $rows['nomeprodotto']  ?></th>
-            <th width="10px"> <?php print $rows['quantita'] ?></th>
-            <th width="10px"><?php print $rows['prezzototale'] ?></th>
+            <th width="10px"> <?php print $rows['quantita'] ?>  <?php print $rows['tipoquantita'] ?></th>
+            <th width="10px"><?php print $rows['prezzototale'] ?>€</th>
             </tr> 
             
     <?php
