@@ -63,7 +63,7 @@ $(function() {
                     <img src="immagini/logo.jpg" alt="Admin" class="rounded-circle" width="150">
                     <div class="mt-3">
                       <h4><?php echo $rows['nome']; ?> <?php echo $rows['cognome']; ?></h4>
-                      <a href="tuttigliordini.php"> <button class="btn btn-primary">Tutti gli ordini</button></a>
+                      <a href="tuttigliordini.php"> <button class="btn btn-success">Tutti gli ordini</button></a>
                     </div>
                   </div>
                 </div>

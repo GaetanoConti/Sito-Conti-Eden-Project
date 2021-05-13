@@ -15,7 +15,7 @@ else {
   <html>
     <head>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script type="text/javascript" language="javascript" src="js_site/paginaregistrazione.js"></script>
@@ -162,8 +162,8 @@ else {
     </div> <!-- form-group// -->
     <div class="custom-control custom-checkbox">
         <input type="checkbox" class="custom-control-input" id="customControlInline" required>
-        <label class="custom-control-label" for="customControlInline">Dichiaro di aver letto l'<a target="_blank" href="#">informativa sulla privacy</a> ai sensi del GDPR e do il consenso al trattamento dei dati personali.</label>
-    </div>       
+        <label class="custom-control-label" for="customControlInline">Dichiaro di aver letto l'<a data-toggle="modal" data-target="#infoModal" href="#">informativa sulla privacy</a> ai sensi del GDPR e do il consenso al trattamento dei dati personali.</label>
+      </div>       
     
     <br>
     <br>                                     
@@ -181,6 +181,32 @@ else {
 <br>
 <br>
 
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="modal"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Informativa privacy</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+In ottemperanza degli obblighi derivanti dalla normativa nazionale (Codice in materia di protezione dei dati personali) e europea (Regolamento europeo per la protezione dei dati personali), il presente sito rispetta e tutela la riservatezza dei visitatori e degli utenti, ponendo in essere ogni sforzo possibile e proporzionato per non ledere i diritti degli utenti. <br>
+Il presente sito non pubblica annunci pubblicitari, non usa dati a fini di invio di pubblicità. 
+Si comunica inoltre che il presente sito utilizza cookie al fine poter usufruire di alcune funzionalità, quali la gestione degli ordini e dei carrelli.
+Si garantisce inoltre la riservateza dei dati inseriti dall'utente, il cui unico scopo è quello di poter fornire comunicazioni riguardo lo stato dell'ordine, oppure per le consegne a domicilio quello di raggiungere l'indirizzo indicato per la consegna.
+I dati richiesti (nome, cognome, indirizzo, telefono...) sono strettamente necessari, non vengono chiesti dati il cui scopo non rientra tra quelli utili al sito per la gestione degli ordini. Si garantisce inoltre che nessun dato verrà mai venduto a parti terze.</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Ho capito</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     </body>
     </html>

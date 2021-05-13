@@ -303,5 +303,32 @@ else {  ?>
     </div>
   </div>
 </div>
+    <div align="center"  >
+                <button   id="toTop"  class="btn btn-secondary my-n5">
+            <img src="immagini/arrow_up_white2x.png" alt="topArrow" width="20" height="20" class="d-inline-block align-top">
+            Torna all'inizio
+           
+            </button>
+            <br>
+            <br>
+            <br>
+            <br>
+                </div>
+
+<script>
+
+  (window).scroll(function() {
+    if ($(this).scrollTop()) {
+        $('#toTop').fadeIn();
+    } else {
+        $('#toTop').fadeOut();
+    }
+});
+
+$("#toTop").click(function() {
+    $("html, body").animate({scrollTop: 0}, 500);
+ });
+ </script>
+            
 </body>
 </html>

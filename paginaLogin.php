@@ -33,35 +33,35 @@ else {
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	 <!--navbar-->
-	 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
-    <a class="navbar-brand" href=".">Conti Eden Project</a>
+	 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-success ">
+    <a class="navbar-brand" href="." style="color:white">Conti Eden Project</a>
 
       <div class="col">
          
       </div>
-      <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-          <img src="immagini/icona_carrello2x.png" alt="carrello" width="30" height="30" class="d-inline-block align-top"
+      <nav class="navbar navbar-light bg-success">
+        <a class="navbar-brand" href="paginaLogin.php" style="color:white">
+          <img src="immagini/carrello.png" alt="carrello" width="30" height="30" class="d-inline-block align-top"
             alt="">
           Carrello
         </a>
       </nav>
-      <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="azienda.php">
-          <img src="immagini/home.png" alt="azienda" width="30" height="30" class="d-inline-block align-top" alt="">
+      <nav class="navbar navbar-light bg-success">
+        <a class="navbar-brand" href="azienda.php" style="color:white">
+          <img src="immagini/azienda.png" alt="azienda" width="30" height="30" class="d-inline-block align-top" alt="">
           L'azienda
         </a>
       </nav>
     
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="paginaLogin.php">
-                <img src="immagini/account.png" alt="account" width="30" height="30" class="d-inline-block align-top" alt="">
+        <nav class="navbar navbar-light bg-success">
+            <a class="navbar-brand" href="paginaLogin.php" style="color:white">
+                <img src="immagini/account2.png" alt="account" width="30" height="30" class="d-inline-block align-top" alt="">
                 Accedi
               </a>
-              <a class="navbar-brand">
+              <a class="navbar-brand" style="color:white">
                 |
               </a>
-              <a class="navbar-brand" href="paginaRegistrazione.php">
+              <a class="navbar-brand" href="paginaRegistrazione.php" style="color:white">
                 Registrati
               </a>
         </nav>

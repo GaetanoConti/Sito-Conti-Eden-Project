@@ -40,9 +40,10 @@ else {  ?>
   <title><?php $rows['nome'] ?></title>
   <meta charset="utf−8" />
   <meta name="viewport" content="width=device−width, initial−scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> <!-- usa il css di bootstrap -->
+  <link rel="stylesheet" type="text/css" href="css_site/bootstrap.min.css" /> <!-- usa il css di bootstrap -->
   <link rel="stylesheet" type="text/css" href="css_site/index_style.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <style type="text/css">
     a:link, a:visited , a:visited , a:hover, a:active{
         color: white;
@@ -67,19 +68,19 @@ $(function() {
 
 </head>
 
-<body>
+<body style="background-color: #F6DAC1">
 
 <br>
   <br>
   <br>
   <br>
   <br>
-      <div class="position-static">
-        <div class="container mx-1" style="margin-top:3%;">
+      <div class="position-static" >
+        <div class="container mx-1" style="margin-top:3%;" >
           <div class="btn-group-md" role="group" aria-label="Basic example">
-            <a href="categoria.php?nome=Frutta" class="btn btn-primary" style="margin-right: 10;">Frutta</a>
-            <a href="categoria.php?nome=Verdura" class="btn btn-primary" style="margin-right: 10;">Verdura</a>
-            <a href="categoria.php?nome=Altro" class="btn btn-primary" style="margin-right: 10;">Altro</a>
+            <a href="categoria.php?nome=Frutta" class="btn btn-success"  style="margin-right: 10;">Frutta</a>
+            <a href="categoria.php?nome=Verdura" class="btn btn-success" style="margin-right: 10;">Verdura</a>
+            <a href="categoria.php?nome=Altro" class="btn btn-success">Altro</a>
           </div>
         </div>
      </div>
@@ -88,7 +89,7 @@ $(function() {
 
 
 
-  <div class="container-md my-5 mx-lg-6">  
+  <div class="container-md my-5 mx-lg-6" >  
   <div class="card">
 
 <div class="card-body">
@@ -109,7 +110,7 @@ $(function() {
         <p style="font-size:18px"><?php echo $rows['descrizione'];?> </p>
         <label for="example-number-input"><h4>Quantità in     <?php  echo $rows['tipoquantita'];?>:  </h4> </label>
         <form action="transizionecarrello.php?action=add&id=<?php echo $id ?>" method="POST" name="registr">
-        <input name ="inputquantita" class="col-2" class="form-control"  type="number" value="" max= <?php echo $rows['quantita'] ?> min="0.0" step="0.1" id="example-number-input" required>
+        <input name ="inputquantita" class="col-2" class="form-control"  type="number" value="" max= <?php echo $rows['quantita'] ?> min="0.1" step="0.1" id="example-number-input" required>
         <?php  echo "<h5>Disponibili: ";  echo  $rows['quantita']; echo ' '; echo $rows['tipoquantita']; echo "</h5>"; ?>
 
         <?php echo "<h3>"; echo $rows['prezzo']; echo " € a "; echo $rows['tipoquantita']; echo "</h3>";?>
@@ -151,8 +152,9 @@ $(function() {
 ?>
     <div class="container-md my-5 mx-lg-6">
   
-      <div>
-    <h2>Prodotti consigliati</h2>    </div>
+    <div class="card-header" style="background-color: #28a745">
+                    <h5 style="text-align: center; color: white ">Prodotti consigliati</h5>
+                </div>
   <div class="row row-cols-1 row-cols-md-3 g-4 my-3">
 
               <?php  if($nRows != 0) {
@@ -204,6 +206,60 @@ $(function() {
       </div>
     </div>
   </div>
+  <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
+    <footer class="bg-success text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+  <h4> Ci trovi anche qui </h4><br>
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/Conti-Eden-Project-105988287794834" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/contiedenproject/" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+    <div class="container p-4 pb-0">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contatti
+          </h6>
+          <p><i class="fas fa-home me-3"></i>  Rieti, Lazio, Via Salaria, km 74/500</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            contiedenpoject@mail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> +39 123456789</p>
+          <p><i class="fas fa-print me-3"></i> 0746 234 567</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">Contiedenproject.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 </body>
 </html>

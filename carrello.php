@@ -37,7 +37,7 @@ if (isset($_COOKIE['username']) || isset($_SESSION['username'])) {
   <meta charset="utf−8" />
   <meta name="viewport" content="width=device−width, initial−scale=1.0" />
   <link rel="stylesheet" type="text/css" href="css_site/index_style.css" />
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css_site/bootstrap.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script>var fileNavbar='navbar_login.php';</script> 
@@ -49,8 +49,18 @@ if (isset($_COOKIE['username']) || isset($_SESSION['username'])) {
         $('#indirizzo').toggle(this.checked);
         }).change();
 
+        $('[id="domicilio"]').on('change', function() {
+        $('#indirizzoLabel').toggle(this.checked);
+        }).change();
+        
+
+
         $('[id="ritira"]').on('change', function() {
         $('#indirizzo').hide(this.checked);
+        }).change();
+
+        $('[id="ritira"]').on('change', function() {
+        $('#indirizzoLabel').hide(this.checked);
         }).change();
 
 });
@@ -114,7 +124,7 @@ $(function() {
 <div data-include="header"></div>
 </head>
 
-<body>
+<body style="background-color: #F6DAC1">
     <br>
     <br>
     <br>
@@ -214,7 +224,6 @@ $(function() {
                     <label for="ritira">
                       <h4>A domicilio</h4>
                     </label>
-                    <input name="indirizzo" id="indirizzo" placeholder="Indirizzo" size="30" type="text" style="margin-left: 32%;" ><br>
                   </div>
 
 
@@ -231,6 +240,11 @@ $(function() {
         <div class="card">
 
           <div class="card-body">
+          <label for="indirizzo" id="indirizzoLabel">
+              <h5><b>Indirizzo: </b></h5>
+            </label>
+          <input name="Indirizzo" id="indirizzo"  size="30" type="text" style="margin-left: 3%;" ><br>
+
             <label for="telefono">
               <h5><b>Telefono: </b></h5>
             </label>
@@ -260,6 +274,29 @@ $(function() {
   </div>
 
 </form> 
+
+<div align="center" >
+                <button   id="toTop"  class="btn btn-secondary">
+            <img src="immagini/arrow_up_white2x.png" alt="topArrow" width="20" height="20" class="d-inline-block align-top">
+            Torna all'inizio
+            </button>
+                </div>
+
+<script>
+
+  (window).scroll(function() {
+    if ($(this).scrollTop()) {
+        $('#toTop').fadeIn();
+    } else {
+        $('#toTop').fadeOut();
+    }
+});
+
+$("#toTop").click(function() {
+    $("html, body").animate({scrollTop: 0}, 500);
+ });
+ </script>
+
 </body>
 
 </html>
@@ -273,7 +310,7 @@ $(function() {
     <meta charset="utf−8" />
     <meta name="viewport" content="width=device−width, initial−scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css_site/index_style.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css_site/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script>var fileNavbar='navbar_login.php';</script> 
@@ -292,7 +329,7 @@ $(function() {
 
         <div data-include="header"></div>
     </head>
-    <body>
+    <body style="background-color: #F6DAC1">
         <br>
         <br>
         <br>
@@ -311,13 +348,22 @@ $(function() {
                 <div class="card-body cart">
                     <div class="col-sm-12 empty-cart-cls text-center"> <img src="immagini/empty-cart.png" width="130" height="130" class="img-fluid mb-4 mr-3">
                         <h3><strong>Il tuo carrello è vuoto</strong></h3>
-                        <h4>Inizia ad acquistare i nostri prodotti!</h4> <a href="index.php" class="btn btn-primary cart-btn-transform m-3" data-abc="true">Continua a fare acquisti</a>
+                        <h4>Inizia ad acquistare i nostri prodotti!</h4> <a href="index.php" class="btn btn-success cart-btn-transform m-3" data-abc="true">Continua a fare acquisti</a>
                     </div>
                 </div>
             </div>
+
+
+            
         </div>
+        
     </div>
+
+    
 </div>
+
+
+
     </body> 
      <?php
  }
