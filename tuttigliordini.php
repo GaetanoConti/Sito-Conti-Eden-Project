@@ -63,7 +63,6 @@ $(function() {
                     <img src="immagini/logo.jpg" alt="Admin" class="rounded-circle" width="150">
                     <div class="mt-3">
                       <h4><?php echo $rows['nome']; ?> <?php echo $rows['cognome']; ?></h4>
-                      <a href="tuttigliordini.php"> <button class="btn btn-primary">Tutti gli ordini</button></a>
                     </div>
                   </div>
                 </div>
@@ -115,15 +114,14 @@ $(function() {
               </div>
           </div>
           
-          <h3 style="margin-left:35%;"> Ordini recenti </h3>
+          <h3 style="margin-left:35%;">Tutti gli ordini </h3>
           <div class="col-md-8" style="margin-left:33%;">
             <div class="card mb-3">
               <div class="card-body">
 
     <?php
     $cliente = $_SESSION['username'];
-    $dataoggi=date("Y/m/d");
-    $query="select ord.id, acc.email, ord.giorno, ord.fasciaoraria, ord.prezzofinale, ord.modalita from ordini ord,accounts acc where acc.email = '$cliente'  and ord.cliente = acc.email and ord.giorno >= '$dataoggi' order by ord.giorno, ord.fasciaoraria DESC fetch first 2 row only;"; 
+    $query="select ord.id, acc.email, ord.giorno, ord.fasciaoraria, ord.prezzofinale, ord.modalita from ordini ord,accounts acc where acc.email = '$cliente'  and ord.cliente = acc.email order by ord.giorno, ord.fasciaoraria DESC;"; 
     $res = pg_exec($query);
     $nrows = pg_numrows($res);?>
     

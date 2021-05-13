@@ -110,7 +110,7 @@ $(function() {
         <label for="example-number-input"><h4>Quantità in     <?php  echo $rows['tipoquantita'];?>:  </h4> </label>
         <form action="transizionecarrello.php?action=add&id=<?php echo $id ?>" method="POST" name="registr">
         <input name ="inputquantita" class="col-2" class="form-control"  type="number" value="" max= <?php echo $rows['quantita'] ?> min="0.0" step="0.1" id="example-number-input" required>
-        <?php  echo "<h5>Disponibili: ";  echo  $rows['quantita']; echo "</h5>"; ?>
+        <?php  echo "<h5>Disponibili: ";  echo  $rows['quantita']; echo ' '; echo $rows['tipoquantita']; echo "</h5>"; ?>
 
         <?php echo "<h3>"; echo $rows['prezzo']; echo " € a "; echo $rows['tipoquantita']; echo "</h3>";?>
 
