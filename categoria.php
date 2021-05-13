@@ -44,7 +44,7 @@ $nrows = pg_numrows($res);
     <link rel="stylesheet" type="text/css" href="css_site/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css_site/index_style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" lang="javascript" src="js/scheda_prodotto.js"></script>
+    <script type="text/javascript" lang="javascript" src="js_site/scheda_prodotto.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <style type="text/css">
     a:link, a:visited , a:visited , a:hover, a:active{
