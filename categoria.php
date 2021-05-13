@@ -41,7 +41,7 @@ $nrows = pg_numrows($res);
 <title>Categoria </title>
     <meta charset="utf−8" />
     <meta name="viewport" content="width=device−width, initial−scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css_site/bootstrap.min.css" /> <!-- usa il css di bootstrap -->
     <link rel="stylesheet" type="text/css" href="css_site/index_style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" lang="javascript" src="js/scheda_prodotto.js"></script>
@@ -133,7 +133,28 @@ $nrows = pg_numrows($res);
 
                     
                 </div>
-            </div>
+                <div align="center" >
+                <button   id="toTop"  class="btn btn-secondary">
+            <img src="immagini/arrow_up_white2x.png" alt="topArrow" width="20" height="20" class="d-inline-block align-top">
+            Torna all'inizio
+            </button>
+                </div>
+
+<script>
+
+  (window).scroll(function() {
+    if ($(this).scrollTop()) {
+        $('#toTop').fadeIn();
+    } else {
+        $('#toTop').fadeOut();
+    }
+});
+
+$("#toTop").click(function() {
+    $("html, body").animate({scrollTop: 0}, 500);
+ });
+ </script>
+            
         </div>
     </div>
 </body>
