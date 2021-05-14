@@ -1,18 +1,18 @@
 <?php
-  session_start(); 
+  session_start();
   if (isset($_COOKIE['username']) || isset($_SESSION['username'])) {
     if ((isset($_COOKIE['username']))) {
     $_SESSION['username'] = $_COOKIE['username'];
     }
     ?>
     
-    <script>var fileNavbar='navbar_login.php';</script> 
+    <script>var fileNavbar='navbar_login_az.php';</script> 
 <?php
     }
 
   
 else {  ?>
-<script>var fileNavbar='navbar_registrazione.html';</script> 
+<script>var fileNavbar='navbar_registrazione_az.html';</script> 
  
   <?php
     
@@ -34,27 +34,29 @@ else {  ?>
   <link rel = "stylesheet" href = "css_site/index_style.css">
   <link rel="stylesheet" type="text/css" href="css_site/azienda.css" />
   <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+
   <script>
 
-    $(function() {
-      var includi =$('[data-include]');
-      jQuery.each(includi, function(){
+$(function() {
+  var includi =$('[data-include]');
+  jQuery.each(includi, function(){
 
-      $(this).load(fileNavbar);
-       });
-    });
+  $(this).load(fileNavbar);
+   });
+});
 
 
-  </script>
-  <div data-include="header"></div>
+</script>
+
+<div data-include="header"></div>
 </head>
 <body>
 
-<div class="container-lg">
+<div class="container-lg" style="margin-top: -40%">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -257,10 +259,10 @@ else {  ?>
       <p><span class="glyphicon glyphicon-envelope"></span>Email: contiedenpoject@mail.com</p>
       <div>
       <a class = "btn btn-social-icon btn-facebook" href = "https://www.facebook.com/Conti-Eden-Project-105988287794834">
-        <span class = "fa fa-facebook"></span>
+        <span class = "fab fa-facebook"></span>
      </a>    
      <a class = "btn btn-social-icon btn-instagram" href = "https://www.instagram.com/contiedenproject/">
-      <span class = "fa fa-instagram"></span>
+      <span class = "fab fa-instagram"></span>
    </a>   
   </div>    
     </div>
@@ -311,8 +313,6 @@ else {  ?>
             </button>
             <br>
             <br>
-            <br>
-            <br>
                 </div>
 
 <script>
@@ -329,6 +329,47 @@ $("#toTop").click(function() {
     $("html, body").animate({scrollTop: 0}, 500);
  });
  </script>
-            
+<br>
+<br> 
+<footer class="footer bg-success text-center text-white" >
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+  <h4 style ="background-color: #28a745; letter-spacing: normal; font-size: 25px "> Ci trovi anche qui </h4><br>
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" style ="background-color: #28a745; border-color: white"  href="https://www.facebook.com/Conti-Eden-Project-105988287794834" role="button"
+        ><i class="fab fa-facebook-f" ></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1"  style ="background-color: #28a745; border-color: white" href="https://www.instagram.com/contiedenproject/" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+    <div class="container p-4 pb-0">
+          <!-- Links -->
+          <h4 class="text-uppercase fw-bold mb-4" style ="background-color: #28a745; letter-spacing: normal;">
+            Contatti
+          </h4>
+          <p><i class="fas fa-home me-3"></i>  Rieti, Lazio, Via Salaria, km 74/500</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            contiedenpoject@mail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> +39 123456789</p>
+          <p><i class="fas fa-print me-3"></i> 0746 234 567</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); height: 50px; font-size: 15px">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">Contiedenproject.com</a>
+  </div>
+  </div>
+  <!-- Grid container -->
+ 
+</footer>         
 </body>
 </html>
