@@ -128,11 +128,9 @@ else {  ?>
   <br>
   <br>
   <br>
-  <div>
     <div class="container-lg" style="margin-bottom: 8%;">
       <h2 >I nostri prodotti</h2>
       <br>
-
       <div class="card-deck">
         <div class="card">
           <img class="card-img-top" src="immagini/frutta.jpg" alt="Card image cap">
@@ -156,14 +154,13 @@ else {  ?>
             <h5 class="card-title">Altro</h5>
             <p class="card-text">Uova, farina, miele, scopri tutti i nostri prodotti</p>
               <a href="categoria.php?nome=Altro" class="bottone" style="background-color: #007bff; color: white">Vai ai prodotti</a>
-
             </div>
         </div>
       </div>
     </div>
-  </div>
+  
 
-  <footer class="footer bg-success text-center text-white" style="">
+  <footer class="footer bg-success text-center text-white">
   <!-- Grid container -->
   <div class="container p-4 pb-0">
   <h4> Ci trovi anche qui </h4><br>

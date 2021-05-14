@@ -45,13 +45,12 @@ else {
 
 
 
-    <link rel="icon" href="immagini/logo.jpg">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
     <title>Registrazione</title>
-    <link rel="icon" href="immagini/logo.jpg">
+    <link rel="icon" href="immagini/logo3.png">
    <!--navbar-->
 	 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-success ">
    <a class="navbar-brand" href="." style="color:white">Conti Eden Project  <img src="immagini/logobianco.png"  width="50" height="50" style="margin-left: 10px" ></a>

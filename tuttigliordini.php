@@ -20,11 +20,11 @@
 <head>
     <meta charset="utf-8">
     <title>Profilo</title>
-    <link rel="icon" href="immagini/logo.jpg">
+    <link rel="icon" href="immagini/logo3.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel = "stylesheet" href = "css_site/profilo_style.css">
-    <link rel="stylesheet" type="text/css" href="css_site/index_style.css" />
+    <link rel="stylesheet" type="text/css" href="css_site/carrello.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   
