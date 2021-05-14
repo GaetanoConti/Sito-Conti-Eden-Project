@@ -31,7 +31,7 @@ else {  ?>
 
 
 <title>Conti Eden Project</title>
-<link rel="icon" href="immagini/logo1.jpg">
+<link rel="icon" href="immagini/logo3.png">
   <meta charset="utf−8" />
   <meta name="viewport" content="width=device−width, initial−scale=1.0" />
   <!--width=device−width rende responsive la pagina     -->
@@ -40,7 +40,8 @@ else {  ?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  <script>
+  <link rel="stylesheet" type="text/css" href="css_site/index_style.css" />
+ <script>
 
     $(function() {
       var includi =$('[data-include]');
@@ -54,17 +55,6 @@ else {  ?>
   </script>
 
   <div data-include="header"></div>
-  <style>
-body {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto;
-}
-.footer {
-  grid-row-start: 5;
-  grid-row-end: 6;
-}
-</style>
 </head>
 
 
@@ -149,7 +139,7 @@ body {
           <div class="card-body">
             <h5 class="card-title">Frutta</h5>
             <p class="card-text">Assapora la nostra deliziosa frutta, ti sorprenderemo </p>
-            <a href="categoria.php?nome=Frutta" class="btn btn-primary">Vai ai prodotti</a>
+            <a href="categoria.php?nome=Frutta" class="bottone" style="background-color: #007bff; color: white; ">Vai ai prodotti</a>
           </div>
         </div>
         <div class="card">
@@ -157,7 +147,7 @@ body {
           <div class="card-body">
             <h5 class="card-title">Verdura</h5>
             <p class="card-text">Gusta il sapore autentico della verdura dei nostri campi</p>
-            <a href="categoria.php?nome=Verdura" class="btn btn-primary">Vai ai prodotti</a>
+            <a href="categoria.php?nome=Verdura" class="bottone" style="background-color: #007bff; color: white;">Vai ai prodotti</a>
           </div>
         </div>
         <div class="card">
@@ -165,7 +155,7 @@ body {
           <div class="card-body">
             <h5 class="card-title">Altro</h5>
             <p class="card-text">Uova, farina, miele, scopri tutti i nostri prodotti</p>
-              <a href="categoria.php?nome=Altro" class="btn btn-primary">Vai ai prodotti</a>
+              <a href="categoria.php?nome=Altro" class="bottone" style="background-color: #007bff; color: white">Vai ai prodotti</a>
 
             </div>
         </div>

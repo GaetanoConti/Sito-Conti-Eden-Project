@@ -100,17 +100,17 @@ $(function() {
 
 
 
-  <div class="container-md my-5 mx-lg-6" >  
-  <div class="card">
+  <div class="container-md my-5 mx-lg-6">  
+  <div class="card2">
 
-<div class="card-body">
-    <div class="row">
-      <div class="col">
-     
-         <?php $file="immagini\\";
-              $file .= $rows['fotoprodotto'];?>                
-   <img src= <?php echo $file; ?> class="border " width="450px" height="350px">
-      </div>
+    <div class="card-body">
+        <div class="row">
+          <div class="col">
+        
+            <?php $file="immagini\\";
+                  $file .= $rows['fotoprodotto'];?>                
+              <img src= <?php echo $file; ?> class="border " width="450px" height="350px">
+          </div>
 
 
       <div class="col">
@@ -129,10 +129,10 @@ $(function() {
           <?php if ($rows['quantita']>0 ) {
           ?>
             
-            <button type="submit" name="bottoneAcquista" class="btn btn-primary">
+            <a class='bottone' style='background-color: #007bff; color: white; float: left; width: 199px'> <button type="submit"  style="width:200px" name="bottoneAcquista" class="btn btn-primary">
             <img src="immagini/icona_carrello2x white.png" alt="carrello" width="30" height="30" class="d-inline-block align-top">
             Aggiungi al carrello
-            </button>
+            </button></a>
           </form>
             <?php } else {  ?>
               <h4> <span class="badge bg-danger">Al momento non disponibile</span></h4>
@@ -194,18 +194,18 @@ $(function() {
                             
                             <div class="card-body">
                                 <?php
-                                    echo "<h2>";  echo $rowsRandom['nome'] ??= 'default value'; echo  "</h2>";     
-                                    echo "<h4>"; echo $rowsRandom['prezzo'] ??= 'default value'; echo " € a "; echo $rowsRandom['tipoquantita'] ??= 'default value'; echo "</h4>";            
+                                    echo "<h4>";  echo $rowsRandom['nome'] ??= 'default value'; echo  "</h4>";     
+                                    echo "<h5>"; echo $rowsRandom['prezzo'] ??= 'default value'; echo " € a "; echo $rowsRandom['tipoquantita'] ??= 'default value'; echo "</h5>";            
                                  ?>   
                                     <?php if ($rowsRandom['quantita'] ??= 'default value' >0 ) {
                                  ?>
-                                    <div  class="btn btn-primary">
-                                        <?php  echo "<a href=../scheda_prodotto.php?nome=$IDprodotto> Acquista prodotto </a>"?>                                                       
+                                    <div>
+                                        <?php  echo "<a href=../scheda_prodotto.php?nome=$IDprodotto class='bottone' style='background-color: #007bff; color: white'> Acquista prodotto </a>"?>                                                       
                                     </div>
                              <?php } else {  ?>
                                 <h4> <span class="badge bg-danger">Al momento non disponibile</span></h4>
-                                     <div  class="btn btn-primary">
-                                     <?php  echo "<a href=../scheda_prodotto.php?nome=$IDprodotto> Acquista prodotto </a>"?>                                                       
+                                     <div>
+                                     <?php  echo "<a href=../scheda_prodotto.php?nome=$IDprodotto class='bottone' style='background-color: #007bff; color: white'> Acquista prodotto </a>"?>                                                       
                                                 
                                     </div>
                                 <?php  } ?>

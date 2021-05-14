@@ -60,7 +60,24 @@ $nrows = pg_numrows($res);
   grid-row-start: 7;
   grid-row-end: 8;
 }
+.card:hover{
+     transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
 
+.card-1{
+  background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
+      background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+}
+
+
+@media(max-width: 990px){
+  .card{
+    margin: 20px;
+  }
+} 
     </style>
 
 <script>
@@ -120,18 +137,18 @@ $nrows = pg_numrows($res);
                             
                             <div class="card-body">
                                 <?php
-                                    echo "<h2>";  echo $row['nome']; echo  "</h2>";     
-                                    echo "<h4>"; echo $row['prezzo']; echo " € a "; echo $row['tipoquantita']; echo "</h4>";            
+                                    echo "<h4>";  echo $row['nome']; echo  "</h4>";     
+                                    echo "<h5>"; echo $row['prezzo']; echo " € a "; echo $row['tipoquantita']; echo "</h5>";            
                                  ?>   
                                     <?php if ($row['quantita']>0 ) {
                                  ?>
-                                    <div  class="btn btn-primary">
-                                        <?php  echo "<a href=../scheda_prodotto.php?nome=$IDprodotto> Acquista prodotto </a>"?>                                                       
+                                    <div>
+                                        <?php  echo "<a href=../scheda_prodotto.php?nome=$IDprodotto class='bottone' style='background-color: #007bff; color: white; margin-top:19%'> Acquista prodotto </a>"?>                                                       
                                     </div>
                              <?php } else {  ?>
                                 <h4> <span class="badge bg-danger">Al momento non disponibile</span></h4>
-                                     <div  class="btn btn-primary">
-                                        <?php  echo "<a href=../scheda_prodotto.php?nome=$IDprodotto> Acquista prodotto </a>"?>                                                       
+                                     <div >
+                                        <?php  echo "<a href=../scheda_prodotto.php?nome=$IDprodotto class='bottone' style='background-color: #007bff; color: white'> Acquista prodotto </a>"?>                                                       
                                     </div>
                                 <?php  } ?>
                                 

@@ -169,7 +169,7 @@ body {
                         $totalprice+=$subtotal; 
                     ?>
 
-                    <div class="card">
+                    <div class="card2">
                             <div class="card-body">
                                 <div class="row">
                                 <div class="col-6">
@@ -211,7 +211,7 @@ body {
 
       <div class="col-5 mx-3">
         <div class="container-fluid mx-lg-5"></div>
-        <div class="card">
+        <div class="card2">
 
           <div class="card-body">
 
@@ -246,11 +246,13 @@ body {
         </div>
 
         <br>
+        <br>
+        <br>
 
 
 
         <div class="container-fluid mx-lg-5"></div>
-        <div class="card">
+        <div class="card2">
 
           <div class="card-body">
           <label for="indirizzo" id="indirizzoLabel">
@@ -366,7 +368,7 @@ $("#toTop").click(function() {
      <title>Carrello</title>
     <meta charset="utf−8" />
     <meta name="viewport" content="width=device−width, initial−scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css_site/index_style.css" />
+    <link rel="stylesheet" type="text/css" href="css_site/carrello.css" />
     <link rel="stylesheet" type="text/css" href="css_site/bootstrap.min.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -418,7 +420,7 @@ body {
                 <div class="card-body cart">
                     <div class="col-sm-12 empty-cart-cls text-center"> <img src="immagini/empty-cart.png" width="130" height="130" class="img-fluid mb-4 mr-3">
                         <h3><strong>Il tuo carrello è vuoto</strong></h3>
-                        <h4>Inizia ad acquistare i nostri prodotti!</h4> <a href="index.php" class="btn btn-success cart-btn-transform m-3" data-abc="true">Continua a fare acquisti</a>
+                        <h4>Inizia ad acquistare i nostri prodotti!</h4> <a href="index.php" class='btn btn-success'data-abc="true">Continua a fare acquisti</a>
                     </div>
                 </div>
                 
