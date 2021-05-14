@@ -9,8 +9,7 @@
   ?>
 <html>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-success">
-        <a class="navbar-brand" href="." style="color:white">Conti Eden Project</a>
-    
+        <a class="navbar-brand" href="." style="color:white">Conti Eden Project  <img src="immagini/logobianco.png"  width="70" height="70" style="margin-left: 10px" ></a>
     
         <div class="col">
          

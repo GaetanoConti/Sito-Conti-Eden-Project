@@ -19,7 +19,18 @@ else {
 	<link rel = "stylesheet" href = "css_site/paginalogin_style.css">
 
     <script type="text/javascript" language="javascript" src="js_site/paginalogin.js">         </script> 
- 
+		<style>
+			
+			body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.footer {
+  grid-row-start: 6;
+  grid-row-end: 7 ;
+}
+		</style>
      <link rel="icon" href="immagini/logo.jpg">
 	<title>Login</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -70,7 +81,7 @@ else {
 </head>
 <!--Coded with love by Mutiullah Samim-->
 <body>
-	<div class="container h-100" style="margin-top: 4%;">
+	<div class="container h-100" style="margin-top: 10%;">
 		<div class="d-flex justify-content-center h-100">
 			<div class="user_card">
 				<div class="d-flex justify-content-center">
@@ -127,5 +138,54 @@ else {
 			</div>
 		</div>
 	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<footer class="bg-success text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+  <h4> Ci trovi anche qui </h4><br>
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/Conti-Eden-Project-105988287794834" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="footer btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/contiedenproject/" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+    <div class="container p-4 pb-0">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contatti
+          </h6>
+          <p><i class="fas fa-home me-3"></i>  Rieti, Lazio, Via Salaria, km 74/500</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            contiedenpoject@mail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> +39 123456789</p>
+          <p><i class="fas fa-print me-3"></i> 0746 234 567</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">Contiedenproject.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 </body>
 </html>

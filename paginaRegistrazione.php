@@ -13,8 +13,20 @@ else {
 }
 ?>
   <html>
-    <head>
-
+    <head>  
+        
+    <style>
+			
+			body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.footer {
+  grid-row-start: 6;
+  grid-row-end: 7 ;
+}
+		</style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -24,7 +36,8 @@ else {
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="viewport" content="width=device−width, initial−scale=1.0" />
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -81,7 +94,7 @@ else {
 <br>
 <br>
 <br>
-<div class="container" style="margin-top: 8%;">
+<div class="container" style="margin-top: 10%; margin-bottom: 5%; float:left">
     <blockquote class="quote-box">
       <p class="quotation-mark">
         “
@@ -90,14 +103,14 @@ else {
         La pioggia rallenta i lavori agricoli ma tonifica i prati. Il verde rilassa e il marrone attende la mano paziente dell’agricoltore.
       </p>
       <hr>
-      <div class="blog-post-actions"></div>
+      <div class="blog-post-actions">
         <p class="blog-post">
           Buona primavera, da Conti Eden Project
         </p>
       </div>
     </blockquote>
 </div>
-<div class="container" style="margin-top: 3%;">
+<div class="container" style="margin-top:-35%; float:right">
 <div class="user_card">
     <div class="d-flex justify-content-center">
         <div class="brand_logo_container">
@@ -176,6 +189,7 @@ else {
 </div> <!-- card.// -->
 
 </div> 
+
 <!--container end.//-->
 
 <br>
@@ -207,6 +221,48 @@ I dati richiesti (nome, cognome, indirizzo, telefono...) sono strettamente neces
             </div>
         </div>
     </div>
+      
+    <footer class="bg-success text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+  <h4> Ci trovi anche qui </h4><br>
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/Conti-Eden-Project-105988287794834" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
 
+      <!-- Instagram -->
+      <a class="footer btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/contiedenproject/" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+    <div class="container p-4 pb-0">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contatti
+          </h6>
+          <p><i class="fas fa-home me-3"></i>  Rieti, Lazio, Via Salaria, km 74/500</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            contiedenpoject@mail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> +39 123456789</p>
+          <p><i class="fas fa-print me-3"></i> 0746 234 567</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">Contiedenproject.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
     </body>
     </html>

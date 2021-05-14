@@ -51,6 +51,16 @@ $nrows = pg_numrows($res);
         color: white;
         font-family: “Helvetica Neue”, Helvetica, Arial, sans-serif;
     }
+    body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.footer {
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+
     </style>
 
 <script>
@@ -176,7 +186,7 @@ $("#toTop").click(function() {
     <br>
     <br>
 
-    <footer class="bg-success text-center text-white">
+    <footer class="footer bg-success text-center text-white">
   <!-- Grid container -->
   <div class="container p-4 pb-0">
   <h4> Ci trovi anche qui </h4><br>

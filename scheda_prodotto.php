@@ -32,6 +32,7 @@ else {  ?>
   $q1 = "select * from prodotti where id= '$id'";
 
   $result= pg_query_params($dbconn, $q1, array());
+  $nRow = pg_numrows($result);
   while($rows=pg_fetch_array($result,null, PGSQL_ASSOC))  {
 
 
@@ -49,6 +50,16 @@ else {  ?>
         color: white;
         font-family: “Helvetica Neue”, Helvetica, Arial, sans-serif;
     }
+    body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.footer {
+  grid-row-start: 6;
+  grid-row-end: 7 ;
+}
+
     </style>
 
 <script>
@@ -142,7 +153,7 @@ $(function() {
 
 <?php
  
-    $qrandom = "select * from prodotti where random() < 0.5 limit 1; ";
+    $qrandom = "select * from prodotti offset floor(random()*(select count(*) from prodotti)) limit 1;";
     $resRandom= pg_query($dbconn, $qrandom);
     $nRows = pg_numrows($resRandom);
     $stack = array();
@@ -160,12 +171,18 @@ $(function() {
               <?php  if($nRows != 0) {
                     for($i=0;$i<3;$i++){
                       $resRandom= pg_query($dbconn, $qrandom);
+                      $nRows = pg_numrows($resRandom);
                       $rowsRandom = pg_fetch_array($resRandom);
+                      while ($nRows == 0) {
+                        $resRandom= pg_query($dbconn, $qrandom);
+                        $nRows = pg_numrows($resRandom);
+                      }
                       while ($rowsRandom['id'] == $rows['id'] || in_array($rowsRandom['id'],$stack) || $rowsRandom['quantita'] == 0){
                         $resRandom= pg_query($dbconn, $qrandom);
                         $rowsRandom = pg_fetch_array($resRandom);
                       }
                       array_push($stack, $rowsRandom['id']);
+                    
                     $IDprodotto = $rowsRandom['id'] ??= 'default value';    ?>
                     <div class="col my-3">
                        
@@ -211,13 +228,7 @@ $(function() {
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+  
 
     <footer class="bg-success text-center text-white">
   <!-- Grid container -->
@@ -231,7 +242,7 @@ $(function() {
       ></a>
 
       <!-- Instagram -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/contiedenproject/" role="button"
+      <a class="footer btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/contiedenproject/" role="button"
         ><i class="fab fa-instagram"></i
       ></a>
     </section>

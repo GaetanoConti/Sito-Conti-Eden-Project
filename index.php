@@ -54,6 +54,17 @@ else {  ?>
   </script>
 
   <div data-include="header"></div>
+  <style>
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.footer {
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+</style>
 </head>
 
 
@@ -162,7 +173,7 @@ else {  ?>
     </div>
   </div>
 
-  <footer class="bg-success text-center text-white">
+  <footer class="footer bg-success text-center text-white" style="">
   <!-- Grid container -->
   <div class="container p-4 pb-0">
   <h4> Ci trovi anche qui </h4><br>
