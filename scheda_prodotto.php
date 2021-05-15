@@ -18,7 +18,7 @@
       }
       }
 else {  ?>
-  <script>      var fileNavbar='navbar_registrazione.html';  </script> 
+  <script>      var fileNavbar='navbar_registrazione.php';  </script> 
   <?php
 }
     ?>
@@ -102,7 +102,7 @@ $(function() {
 
 
   <div class="container-md my-5 mx-lg-6">  
-  <div class="card2">
+  <div class="card3">
 
     <div class="card-body">
         <div class="row">

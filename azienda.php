@@ -12,7 +12,7 @@
 
   
 else {  ?>
-<script>var fileNavbar='navbar_registrazione_az.html';</script> 
+<script>var fileNavbar='navbar_registrazione_az.php';</script> 
  
   <?php
     
@@ -27,7 +27,7 @@ else {  ?>
     }
   </script>
   <title>Chi siamo</title>
-  <link rel="icon" href="immagini/logo.jpg">
+  <link rel="icon" href="immagini/logo3.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel = "stylesheet" href = "css_site/azienda_style.css">
@@ -91,7 +91,7 @@ $(function() {
         <img src="immagini/foto1.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
-          <p>Zappo a vigna</p>
+          <p></p>
         </div>      
       </div>
     
@@ -99,7 +99,7 @@ $(function() {
         <img src="immagini/foto2.jpeg" alt="Los Angeles" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
-          <p>Magnate sta bella mela</p>
+          <p></p>
         </div>      
       </div>
 
@@ -107,7 +107,7 @@ $(function() {
         <img src="immagini/foto3.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
-          <p>Zappo a vigna</p>
+          <p></p>
         </div>      
       </div>
 
@@ -115,7 +115,7 @@ $(function() {
         <img src="immagini/foto4.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
-          <p>Zappo a vigna</p>
+          <p></p>
         </div>      
       </div>
 
@@ -123,7 +123,7 @@ $(function() {
         <img src="immagini/foto5.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
-          <p>Zappo a vigna</p>
+          <p></p>
         </div>      
       </div>
 
@@ -131,7 +131,7 @@ $(function() {
         <img src="immagini/foto6.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
-          <p>Zappo a vigna</p>
+          <p></p>
         </div>      
       </div>
 
@@ -139,7 +139,7 @@ $(function() {
         <img src="immagini/foto7.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
-          <p>Zappo a vigna</p>
+          <p></p>
         </div>      
       </div>
 
@@ -147,7 +147,7 @@ $(function() {
         <img src="immagini/foto8.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
-          <p>Zappo a vigna</p>
+          <p></p>
         </div>      
       </div>
 
@@ -155,7 +155,7 @@ $(function() {
         <img src="immagini/foto9.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
-          <p>Zappo a vigna</p>
+          <p></p>
         </div>      
       </div>
 
@@ -163,7 +163,7 @@ $(function() {
         <img src="immagini/foto10.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
-          <p>Zappo a vigna</p>
+          <p></p>
         </div>      
       </div>
 
@@ -171,7 +171,7 @@ $(function() {
         <img src="immagini/foto13.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
-          <p>Zappo a vigna</p>
+          <p></p>
         </div>      
       </div>
 
@@ -179,7 +179,7 @@ $(function() {
         <img src="immagini/foto12.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
-          <p>Zappo a vigna</p>
+          <p></p>
         </div>      
       </div>
    
@@ -216,21 +216,21 @@ $(function() {
       </div>
     </div>
     <div class="col-sm-4">
-      <p class="text-center"><strong>Altra persona 1</strong></p><br>
-        <img src="immagini/davide.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      <p class="text-center"><strong>Simone</strong></p><br>
+        <img src="immagini/agricoltore.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
       <div>
-        <p>Drummer</p>
-        <p>Loves drummin'</p>
-        <p>Member since 1988</p>
+        <p>Operaio</p>
+        <p>Abile agricoltore</p>
+        <p>Disponibile e solare</p>
       </div>
     </div>
     <div class="col-sm-4">
-      <p class="text-center"><strong>Altra persona 2</strong></p><br>
-        <img src="immagini/davide.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      <p class="text-center"><strong>Marco</strong></p><br>
+        <img src="immagini/io.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
       <div>
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
+        <p>Segretario</p>
+        <p>Esperto informatico</p>
+        <p>Instancabile stakanovista</p>
       </div>
     </div>
   </div>
@@ -336,7 +336,7 @@ $("#toTop").click(function() {
   <div class="container p-4 pb-0">
   <h4 style ="background-color: #28a745; letter-spacing: normal; font-size: 25px "> Ci trovi anche qui </h4><br>
     <!-- Section: Social media -->
-    <section class="mb-4">
+    <section class="mb-4" style="margin-left: 1%">
       <!-- Facebook -->
       <a class="btn btn-outline-light btn-floating m-1" style ="background-color: #28a745; border-color: white"  href="https://www.facebook.com/Conti-Eden-Project-105988287794834" role="button"
         ><i class="fab fa-facebook-f" ></i
@@ -350,7 +350,7 @@ $("#toTop").click(function() {
     <!-- Section: Social media -->
     <div class="container p-4 pb-0">
           <!-- Links -->
-          <h4 class="text-uppercase fw-bold mb-4" style ="background-color: #28a745; letter-spacing: normal;">
+          <h4 class="text-uppercase fw-bold mb-4" style ="background-color: #28a745; letter-spacing: normal; margin-left:-1%">
             Contatti
           </h4>
           <p><i class="fas fa-home me-3"></i>  Rieti, Lazio, Via Salaria, km 74/500</p>

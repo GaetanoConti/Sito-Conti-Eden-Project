@@ -20,7 +20,7 @@
   
 else {  ?>
 
-  <script>var fileNavbar='navbar_registrazione.html';  </script> 
+  <script>var fileNavbar='navbar_registrazione.php';  </script> 
   <?php
     
 }
@@ -62,8 +62,8 @@ else {  ?>
   <div class="container-lg"  style="margin-top:8%; ">
     <div id="carouselExampleIndicators" class="carousel slide  carousel-fade" data-ride="carousel">
       <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        
+        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
       </ol>
@@ -71,13 +71,8 @@ else {  ?>
       <div class="carousel-inner">
         <!--primo elemnto-->
 
+     
         <div class="carousel-item active">
-          <a href="azienda.php"> <img class="d-block w-100 h-50" src="immagini/logo1.jpg" alt="Zero slide" ></a>
-          <div class= "carousel-caption d-none d-md-block">
-         </div>
-        </div>
-
-        <div class="carousel-item">
           <a href="scheda_prodotto.php?nome=6"> <img class="d-block w-100 h-50" src="immagini/mieleevidenza.jpeg" alt="First slide" ></a>
           <div class= "carousel-caption d-none d-md-block">
             <h3 style=" font-weight:bold;">Miele di agrumi dei monti Iblei</h3>

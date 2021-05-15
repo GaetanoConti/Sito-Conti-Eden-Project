@@ -18,7 +18,7 @@
         }
         }
 else {  ?>
-  <script>      var fileNavbar='navbar_registrazione.html';  </script> 
+  <script>      var fileNavbar='navbar_registrazione.php';  </script> 
   <?php
 }
     ?>

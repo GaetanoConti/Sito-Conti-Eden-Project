@@ -15,7 +15,7 @@
         $data = pg_query_params($dbconn, $q2, 
             array($nome, $email, $commento));
         if ($data) {
-            header("Location:../azienda.html");
+            header("Location:../azienda.php");
         }
     }
 

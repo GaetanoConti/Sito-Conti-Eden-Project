@@ -6,7 +6,7 @@ session_start();
     user=postgres password=password") 
     or die('Could not connect: ' . pg_last_error());
 
-    
+
     if(isset($_GET['action']) && $_GET['action']=="add"){ 
           
         $id=$_GET['id']; 
@@ -39,5 +39,7 @@ session_start();
         } 
           
     } 
+
+
 
 ?>

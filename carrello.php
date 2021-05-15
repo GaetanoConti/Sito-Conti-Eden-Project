@@ -1,6 +1,14 @@
 <?php
     session_start();
-    
+    if (isset($_COOKIE['username']) || isset($_SESSION['username'])) {
+        ?>
+        <script>var fileNavbar='navbar_login.php';</script> 
+        <?php 
+          }
+  else {  ?>
+    <script>      var fileNavbar='navbar_registrazione.php';  </script> 
+    <?php
+  }
     $dbconn = pg_connect("host=localhost port=5432
     dbname=ContiEdenProject
     user=postgres password=password") 
@@ -27,7 +35,7 @@
 
 ?>
 <?php
-if (isset($_COOKIE['username']) || isset($_SESSION['username'])) {
+
     if (isset($_SESSION['cart'])) { 
     ?>
 <html>
@@ -42,7 +50,6 @@ if (isset($_COOKIE['username']) || isset($_SESSION['username'])) {
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  <script>var fileNavbar='navbar_login.php';</script> 
   <script>
       $(document).ready(function(){
 
@@ -170,7 +177,7 @@ body {
                         $totalprice+=$subtotal; 
                     ?>
 
-                    <div class="card2">
+                    <div class="card4">
                             <div class="card-body">
                                 <div class="row">
                                 <div class="col-6">
@@ -188,7 +195,7 @@ body {
                                     <h5>Quantità:</h5>
                                     </label>
                                     <div class="col-5">
-                                    <input type="number" id="<?php echo $row['id'] ?>" name="quantita[<?php echo $row['id'] ?>]" size="5"  value="<?php echo $_SESSION['cart'][$row['id']]['quantita'] ?>" />
+                                    <input type="number" id="<?php echo $row['id'] ?>" name="quantita[<?php echo $row['id'] ?>]" min=0 value="<?php echo $_SESSION['cart'][$row['id']]['quantita'] ?>" />
                                     </div> <br>
                                     
                                     <div class="col-8">
@@ -212,7 +219,7 @@ body {
 
       <div class="col-5 mx-3">
         <div class="container-fluid mx-lg-5"></div>
-        <div class="card2">
+        <div class="card4">
 
           <div class="card-body">
 
@@ -246,14 +253,12 @@ body {
           </div>
         </div>
 
-        <br>
-        <br>
-        <br>
+        
 
 
 
         <div class="container-fluid mx-lg-5"></div>
-        <div class="card2">
+        <div class="card4">
 
           <div class="card-body">
           <label for="indirizzo" id="indirizzoLabel">
@@ -492,5 +497,5 @@ body {
     </body> 
      <?php
  }
-} 
+
 ?>
