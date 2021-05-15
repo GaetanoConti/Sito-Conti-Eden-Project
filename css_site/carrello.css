@@ -25,3 +25,20 @@ br {
    color:red;
  }
  
+.container-lg {
+ height: 500px;
+}
+.carousel-item img{
+   min-height: 500px;
+}
+body {
+min-height: 100%;
+display: grid;
+grid-template-rows: 1fr auto;
+}
+.footer {
+grid-row-start: 5;
+grid-row-end: 6;
+}
+
+

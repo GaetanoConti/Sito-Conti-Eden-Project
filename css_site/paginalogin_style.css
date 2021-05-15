@@ -1,13 +1,16 @@
   	
-        body, 
+        body , 
 		html {
 			margin: 0;
 			padding: 0;
 			height: 100%;
-            background-image: url('../immagini/08.jpg');
+            background-image: url('../immagini/foto07.jpeg');
             background-repeat: no-repeat;
-            background-attachment: fixed;
+           
             background-size: cover;
+			}
+			body {
+				height: 90vh;
 			}
 		.user_card {
 			height: 420px;
