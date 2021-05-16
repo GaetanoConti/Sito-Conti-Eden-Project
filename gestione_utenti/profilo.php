@@ -14,7 +14,7 @@
   $result= pg_query_params($dbconn, $q1, array($mail));
   while($rows=pg_fetch_array($result,null, PGSQL_ASSOC))  {
 ?>
-<script>var fileNavbar='/navbar_login.php';</script> 
+<script>var fileNavbar='/navbars/navbar_login.php';</script> 
 
 <html>
 <head>
