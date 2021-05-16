@@ -6,13 +6,13 @@
     }
     ?>
     
-    <script>var fileNavbar='/navbar_login_az.php';</script> 
+    <script>var fileNavbar='/navbars/navbar_login_az.php';</script> 
 <?php
     }
 
   
 else {  ?>
-<script>var fileNavbar='/navbar_registrazione_az.php';</script> 
+<script>var fileNavbar='/navbars/navbar_registrazione_az.php';</script> 
  
   <?php
     
