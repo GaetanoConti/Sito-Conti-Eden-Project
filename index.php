@@ -40,7 +40,7 @@ else {  ?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  <link rel="stylesheet" type="text/css" href="css_site/index_style.css" />
+  <link rel="stylesheet" type="text/css" href="/css_site/index_style.css" />
  <script>
 
     $(function() {
@@ -73,7 +73,7 @@ else {  ?>
 
      
         <div class="carousel-item active">
-          <a href="scheda_prodotto.php?nome=6"> <img class="d-block w-100 h-50" src="immagini/mieleevidenza.jpeg" alt="First slide" ></a>
+          <a href="/prodotti/scheda_prodotto.php?nome=6"> <img class="d-block w-100 h-50" src="immagini/mieleevidenza.jpeg" alt="First slide" ></a>
           <div class= "carousel-caption d-none d-md-block">
             <h3 style=" font-weight:bold;">Miele di agrumi dei monti Iblei</h3>
             <p style=" font-style:italic;"> Direttamente dall'azienda Pagliaro di Sorino (Siracusa) </p>
@@ -86,7 +86,7 @@ else {  ?>
 
         <div class="carousel-item">
           <!--secondo elemnto-->
-          <a href="scheda_prodotto.php?nome=8"><img class="d-block w-100 h-50" src="immagini/ribes.jpeg" alt="Second slide"></a>
+          <a href="/prodotti/scheda_prodotto.php?nome=8"><img class="d-block w-100 h-50" src="immagini/ribes.jpeg" alt="Second slide"></a>
           <div class= "carousel-caption d-none d-md-block">
             <h3 style="font-weight:bold;">Ribes rossi</h3>
             <p style="font-style:italic;"> Li userete per una panna cotta o per una marmellata? </p>
@@ -96,7 +96,7 @@ else {  ?>
 
         <div class="carousel-item">
           <!--terzo elemnto-->
-          <a href="scheda_prodotto.php?nome=9"><img class="d-block w-100 h-50" src="immagini/melanzane.jpeg" alt="Second slide"></a>
+          <a href="/prodotti/scheda_prodotto.php?nome=9"><img class="d-block w-100 h-50" src="immagini/melanzane.jpeg" alt="Second slide"></a>
           <div class= "carousel-caption d-none d-md-block">
             <h3 style="font-weight:bold;">Melanzane</h3>
             <p style="font-style:italic;">Direttamente dai nostri campi melanzane ovali nere e tonde bianche </p>
@@ -132,7 +132,7 @@ else {  ?>
           <div class="card-body">
             <h5 class="card-title">Frutta</h5>
             <p class="card-text">Assapora la nostra deliziosa frutta, ti sorprenderemo </p>
-            <a href="categoria.php?nome=Frutta" class="bottone" style="background-color: #007bff; color: white; ">Vai ai prodotti</a>
+            <a href="/prodotti/categoria.php?nome=Frutta" class="bottone" style="background-color: #007bff; color: white; ">Vai ai prodotti</a>
           </div>
         </div>
         <div class="card">
@@ -140,7 +140,7 @@ else {  ?>
           <div class="card-body">
             <h5 class="card-title">Verdura</h5>
             <p class="card-text">Gusta il sapore autentico della verdura dei nostri campi</p>
-            <a href="categoria.php?nome=Verdura" class="bottone" style="background-color: #007bff; color: white;">Vai ai prodotti</a>
+            <a href="/prodotti/categoria.php?nome=Verdura" class="bottone" style="background-color: #007bff; color: white;">Vai ai prodotti</a>
           </div>
         </div>
         <div class="card">
@@ -148,7 +148,7 @@ else {  ?>
           <div class="card-body">
             <h5 class="card-title">Altro</h5>
             <p class="card-text">Uova, farina, miele, scopri tutti i nostri prodotti</p>
-              <a href="categoria.php?nome=Altro" class="bottone" style="background-color: #007bff; color: white">Vai ai prodotti</a>
+              <a href="/prodotti/categoria.php?nome=Altro" class="bottone" style="background-color: #007bff; color: white">Vai ai prodotti</a>
             </div>
         </div>
       </div>
