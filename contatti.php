@@ -5,7 +5,7 @@
     user=postgres password=password") 
     or die('Could not connect: ' . pg_last_error());
     if (!(isset($_POST["submit"]))) {
-        header("Location:../azienda.html"); 
+        header("Location: azienda.php"); 
     }
     else {
         $nome = $_POST["name"];
@@ -15,7 +15,7 @@
         $data = pg_query_params($dbconn, $q2, 
             array($nome, $email, $commento));
         if ($data) {
-            header("Location:../azienda.php");
+            header("Location: azienda.php");
         }
     }
 

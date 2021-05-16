@@ -20,11 +20,11 @@
 <head>
     <meta charset="utf-8">
     <title>Profilo</title>
-    <link rel="icon" href="immagini/logo3.png">
+    <link rel="icon" href="../..//logo3.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel = "stylesheet" href = "css_site/profilo_style.css">
-    <link rel="stylesheet" type="text/css" href="css_site/carrello.css" />
+    <link rel = "stylesheet" href = "../css_site/profilo_style.css">
+    <link rel="stylesheet" type="text/css" href="../css_site/carrello.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   
@@ -74,7 +74,7 @@ $(function() {
               <div class="card">
                 <div class="card-body">
                   <div class="d-flex flex-column align-items-center text-center">
-                    <img src="immagini/logo.jpg" alt="Admin" class="rounded-circle" width="150">
+                    <img src="../immagini/logo.jpg" alt="Admin" class="rounded-circle" width="150">
                     <div class="mt-3">
                       <h4><?php echo $rows['nome']; ?> <?php echo $rows['cognome']; ?></h4>
                     </div>

@@ -7,12 +7,12 @@
     }
     if ($_SESSION['username'] == 'contieden@project.it') {
     ?>
-   <script>var fileNavbar='navbar_azienda.html';</script> 
+   <script>var fileNavbar='/admin/navbar_azienda.html';</script> 
 <?php
     }
     else {
       ?>
-      <script>var fileNavbar='navbar_login.php';</script> 
+      <script>var fileNavbar='/navbar_login.php';</script> 
       <?php
     }
     }
@@ -20,22 +20,22 @@
   
 else {  ?>
 
-  <script>var fileNavbar='navbar_registrazione.php';  </script> 
+  <script>var fileNavbar='/navbar_registrazione.php';  </script> 
   <?php
     
 }
     ?>
 <head>
 <base href="index.php">
-<link rel="stylesheet" type="text/css" href="css_site/index_style.css" />
+<link rel="stylesheet" type="text/css" href="/css_site/index_style.css" />
 
 
 <title>Conti Eden Project</title>
-<link rel="icon" href="immagini/logo3.png">
+<link rel="icon" href="/immagini/logo3.png">
   <meta charset="utf−8" />
   <meta name="viewport" content="width=device−width, initial−scale=1.0" />
   <!--width=device−width rende responsive la pagina     -->
-  <link rel="stylesheet" type="text/css" href="css_site/bootstrap.min.css" /> <!-- usa il css di bootstrap -->
+  <link rel="stylesheet" type="text/css" href="/css_site/bootstrap.min.css" /> <!-- usa il css di bootstrap -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
