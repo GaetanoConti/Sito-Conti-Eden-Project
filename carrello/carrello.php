@@ -2,11 +2,11 @@
     session_start();
     if (isset($_COOKIE['username']) || isset($_SESSION['username'])) {
         ?>
-        <script>var fileNavbar='/navbar_login.php';</script> 
+        <script>var fileNavbar='/navbars/navbar_login.php';</script> 
         <?php 
           }
   else {  ?>
-    <script>      var fileNavbar='/navbar_registrazione.php';  </script> 
+    <script>      var fileNavbar='/navbars/navbar_registrazione.php';  </script> 
     <?php
   }
     $dbconn = pg_connect("host=localhost port=5432
@@ -380,7 +380,7 @@ $("#toTop").click(function() {
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script>var fileNavbar='/navbar_login.php';</script> 
+    <script>var fileNavbar='/navbars/navbar_login.php';</script> 
      <script>
 
         $(function() {
