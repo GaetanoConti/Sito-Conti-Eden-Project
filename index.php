@@ -7,12 +7,12 @@
     }
     if ($_SESSION['username'] == 'contieden@project.it') {
     ?>
-   <script>var fileNavbar='/admin/navbar_azienda.html';</script> 
+   <script>var fileNavbar='navbars/navbar_azienda.html';</script> 
 <?php
     }
     else {
       ?>
-      <script>var fileNavbar='/navbar_login.php';</script> 
+      <script>var fileNavbar='navbars/navbar_login.php';</script> 
       <?php
     }
     }
@@ -20,7 +20,7 @@
   
 else {  ?>
 
-  <script>var fileNavbar='/navbar_registrazione.php';  </script> 
+  <script>var fileNavbar='navbars/navbar_registrazione.php';  </script> 
   <?php
     
 }
