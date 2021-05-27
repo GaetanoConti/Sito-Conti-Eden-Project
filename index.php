@@ -126,7 +126,8 @@ else {  ?>
     <div class="container-lg" style="margin-bottom: 8%;">
       <h2 >I nostri prodotti</h2>
       <br>
-      <div class="card-deck">
+      <div class="row">
+        <div class="col-sm-4 col-xs-12">
         <div class="card">
           <img class="card-img-top" src="immagini/frutta.jpg" alt="Card image cap">
           <div class="card-body">
@@ -135,6 +136,8 @@ else {  ?>
             <a href="/prodotti/categoria.php?nome=Frutta" class="bottone" style="background-color: #007bff; color: white; ">Vai ai prodotti</a>
           </div>
         </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
         <div class="card">
           <img class="card-img-top" src="immagini/verdura.jpg" alt="Card image cap">
           <div class="card-body">
@@ -143,6 +146,8 @@ else {  ?>
             <a href="/prodotti/categoria.php?nome=Verdura" class="bottone" style="background-color: #007bff; color: white;">Vai ai prodotti</a>
           </div>
         </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
         <div class="card">
           <img class="card-img-top" src="immagini/altro.jpg" alt="Card image cap">
           <div class="card-body">
@@ -151,6 +156,7 @@ else {  ?>
               <a href="/prodotti/categoria.php?nome=Altro" class="bottone" style="background-color: #007bff; color: white">Vai ai prodotti</a>
             </div>
         </div>
+      </div>
       </div>
     </div>
   
