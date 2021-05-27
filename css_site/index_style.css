@@ -1,3 +1,4 @@
+
 br {
     line-height: 100%;
  }
@@ -42,7 +43,7 @@ br {
   grid-row-start: 5;
   grid-row-end: 6;
 }
-
+  
 .card {
   position: relative;
   min-width: 300px;
@@ -259,4 +260,3 @@ br {
   color: #fff;
   font-size: 16px;
 }
-
