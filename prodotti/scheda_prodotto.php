@@ -95,9 +95,10 @@ $(function() {
             <a href="/prodotti/categoria.php?nome=Altro" class="btn btn-success">Altro</a>
           </div>
         </div>
+        <hr> 
      </div>
     
-  <hr>    
+     
 
 
 
