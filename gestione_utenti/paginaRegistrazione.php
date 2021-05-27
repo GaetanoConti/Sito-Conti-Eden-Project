@@ -53,7 +53,7 @@ else {
     <link rel="icon" href="/immagini/logo3.png">
    <!--navbar-->
 	 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-success ">
-   <a class="navbar-brand" href="." style="color:white">Conti Eden Project  <img src="/immagini/logobianco.png"  width="50" height="50" style="margin-left: 10px" ></a>
+   <a class="navbar-brand" href="../../index.php" style="color:white">Conti Eden Project  <img src="/immagini/logobianco.png"  width="50" height="50" style="margin-left: 10px" ></a>
 
       <div class="col">
          

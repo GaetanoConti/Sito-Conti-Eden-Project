@@ -46,7 +46,7 @@ else {
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	 <!--navbar-->
 	 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-success ">
-   <a class="navbar-brand" href="." style="color:white">Conti Eden Project  <img src="/immagini/logobianco.png"  width="50" height="50" style="margin-left: 10px" ></a>
+   <a class="navbar-brand" href="../../index.php" style="color:white">Conti Eden Project  <img src="/immagini/logobianco.png"  width="50" height="50" style="margin-left: 10px" ></a>
 
       <div class="col">
          
