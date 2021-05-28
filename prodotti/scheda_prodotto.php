@@ -39,7 +39,7 @@ else {  ?>
   ?>
 <head>
   <title><?php $rows['nome'] ?></title>
-  <link rel="icon" href="/immagini/logo3.png">
+  <link rel="icon" href="/immagini/loghi_azienda/logo3.png">
   <meta charset="utf−8" />
   <meta name="viewport" content="width=device−width, initial−scale=1.0" />
   <link rel="stylesheet" type="text/css" href="/css_site/bootstrap.min.css" /> <!-- usa il css di bootstrap -->
@@ -109,7 +109,7 @@ $(function() {
         <div class="row">
           <div class="col">
         
-            <?php $file="/immagini\\";
+            <?php $file="/immagini/prodotti/";
                   $file .= $rows['fotoprodotto'];?>                
               <img src= <?php echo $file; ?> class="border " width="450px" height="350px">
           </div>
@@ -132,7 +132,7 @@ $(function() {
           ?>
             
             <a class='bottone' style='background-color: #007bff; color: white; float: left; width: 199px'> <button type="submit"  style="width:200px" name="bottoneAcquista" class="btn btn-primary">
-            <img src="/immagini/icona_carrello2x white.png" alt="carrello" width="30" height="30" class="d-inline-block align-top">
+            <img src="/immagini/icone_sito/icona_carrello2x white.png" alt="carrello" width="30" height="30" class="d-inline-block align-top">
             Aggiungi al carrello
             </button></a>
           </form>
@@ -190,7 +190,7 @@ $(function() {
                        
 
                         <div class="card h-100">
-                            <?php $file="/immagini\\";
+                            <?php $file="/immagini/prodotti/";
                                 $file .= $rowsRandom['fotoprodotto'] ??= 'default value';?> 
                             <img  src= <?php echo $file; ?> width="350" height="250"  class="card-img-top" alt="...">                  
                             

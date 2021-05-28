@@ -39,7 +39,7 @@ $nrows = pg_numrows($res);
 <head>
     
 <title>Categoria </title>
-<link rel="icon" href="/immagini/logo3.png">
+<link rel="icon" href="/immagini/loghi_azienda/logo3.png">
     <meta charset="utf−8" />
     <meta name="viewport" content="width=device−width, initial−scale=1.0" />
     <link rel="stylesheet" type="text/css" href="/css_site/bootstrap.min.css" />
@@ -132,7 +132,7 @@ $nrows = pg_numrows($res);
                        
 
                         <div class="card h-100"         >
-                            <?php $file="/immagini\\";
+                            <?php $file="/immagini/prodotti/";
                                 $file .= $row['fotoprodotto'];?> 
                             <img  src= <?php echo $file; ?> width="350" height=250"  class="card-img-top" alt="...">                  
                             
@@ -170,7 +170,7 @@ $nrows = pg_numrows($res);
             <br>
                 <div align="center" >
                 <button   id="toTop"  class="btn btn-secondary">
-            <img src="/immagini/arrow_up_white2x.png" alt="topArrow" width="20" height="20" class="d-inline-block align-top">
+            <img src="/immagini/icone_sito/arrow_up_white2x.png" alt="topArrow" width="20" height="20" class="d-inline-block align-top">
             Torna all'inizio
             </button>
                 </div>
