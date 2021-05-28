@@ -1,6 +1,12 @@
 <?php
 session_start();
 if (empty($_SESSION['registrationerror'])) {
+  if (empty($_SESSION['cart'])) {
+    $num = 0;
+  }
+  else {
+    $num = count($_SESSION['cart']);
+  }
   ?>
  
  <?php
@@ -50,31 +56,32 @@ else {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
     <title>Registrazione</title>
-    <link rel="icon" href="/immagini/logo3.png">
+    <link rel="icon" href="/immagini/loghi_azienda/loghi_azienda/logo3.png">
    <!--navbar-->
 	 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-success ">
-   <a class="navbar-brand" href="../../index.php" style="color:white">Conti Eden Project  <img src="/immagini/logobianco.png"  width="50" height="50" style="margin-left: 10px" ></a>
+   <a class="navbar-brand" href="../../index.php" style="color:white">Conti Eden Project  <img src="/immagini/loghi_azienda/logobianco.png"  width="50" height="50" style="margin-left: 10px" ></a>
 
       <div class="col">
          
       </div>
       <nav class="navbar navbar-light bg-success">
-        <a class="navbar-brand" href="paginaLogin.php" style="color:white">
-          <img src="/immagini/carrello.png" alt="carrello" width="30" height="30" class="d-inline-block align-top"
+        <a class="navbar-brand" href="/carrello/carrello.php" style="color:white">
+        <span class='badge badge-warning' id='lblCartCount' style="display:inline-block;padding:.25em .4em;font-size:75%;font-weight:700;line-height:1;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; width:20px; height:20px; background-color: #ffc107; font-size: 14px; color: black; margin-right:-3%; font-family: arial"><?php echo $num ?></span>
+          <img src="/immagini/icone_sito/carrello.png" alt="carrello" width="30" height="30" class="d-inline-block align-top"
             alt="">
           Carrello
         </a>
       </nav>
       <nav class="navbar navbar-light bg-success">
         <a class="navbar-brand" href="/azienda/azienda.php" style="color:white">
-          <img src="/immagini/azienda.png" alt="azienda" width="30" height="30" class="d-inline-block align-top" alt="">
+          <img src="/immagini/icone_sito/azienda.png" alt="azienda" width="30" height="30" class="d-inline-block align-top" alt="">
           Azienda
         </a>
       </nav>
     
         <nav class="navbar navbar-light bg-success">
             <a class="navbar-brand" href="/gestione_utenti/paginaLogin.php" style="color:white">
-                <img src="/immagini/account2.png" alt="account" width="30" height="30" class="d-inline-block align-top" alt="">
+                <img src="/immagini/icone_sito/account2.png" alt="account" width="30" height="30" class="d-inline-block align-top" alt="">
                 Accedi
               </a>
               <a class="navbar-brand" style="color:white">
@@ -113,7 +120,7 @@ else {
 <div class="user_card">
     <div class="d-flex justify-content-center">
         <div class="brand_logo_container">
-            <img src="/immagini/logo.jpg" class="brand_logo" alt="Logo">
+            <img src="/immagini/loghi_azienda/logo.jpg" class="brand_logo" alt="Logo">
         </div>
     </div>
 <article class="card-body mx-auto" style="max-width: 400px;">
@@ -140,25 +147,25 @@ else {
 		<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
 		 </div>
-        <input name="nome" class="form-control" placeholder="Nome" type="text">
+        <input name="nome" class="form-control" placeholder="Nome" type="text" required>
     </div> <!-- form-group// -->
     <div class="form-group input-group">
 		<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
 		 </div>
-        <input name="cognome" class="form-control" placeholder="Cognome" type="text">
+        <input name="cognome" class="form-control" placeholder="Cognome" type="text" required>
     </div> <!-- form-group// -->
     <div class="form-group input-group">
     	<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
 		 </div>
-        <input name="mail" class="form-control" placeholder="Indirizzo email" type="email">
+        <input name="mail" class="form-control" placeholder="Indirizzo email" type="email" required>
     </div> <!-- form-group// -->
     <div class="form-group input-group">
     	<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
 		</div>
-    	<input name="telefono" class="form-control" placeholder="Numero di telefono" type="text">
+    	<input name="telefono" class="form-control" placeholder="Numero di telefono" type="text" required>
     </div> <!-- form-group// -->
     <div class="form-group input-group">
     	<div class="input-group-prepend">
