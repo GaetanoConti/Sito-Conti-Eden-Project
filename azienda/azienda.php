@@ -27,7 +27,7 @@ else {  ?>
     }
   </script>
   <title>Chi siamo</title>
-  <link rel="icon" href="/immagini/logo3.png">
+  <link rel="icon" href="/immagini/loghi_azienda/logo3.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel = "stylesheet" href = "/css_site/azienda_style.css">
@@ -56,7 +56,7 @@ $(function() {
 </head>
 <body>
 
-<div class="container-lg" style="margin-top: -48%">
+<div class="container-lg" style="margin-top: -44%">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -80,7 +80,7 @@ $(function() {
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="/immagini/foto11.jpeg" alt="New York" width="1200" height="700">
+        <img src="/immagini/azienda/carousel/foto11.jpeg" alt="New York" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p>Un bellissimo campo di insalate Conti Eden Project</p>
@@ -88,7 +88,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/foto1.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto1.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -96,7 +96,7 @@ $(function() {
       </div>
     
       <div class="item">
-        <img src="../immagini/foto2.jpeg" alt="Los Angeles" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto2.jpeg" alt="Los Angeles" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -104,7 +104,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/foto3.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto3.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -112,7 +112,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/foto4.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto4.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -120,7 +120,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/foto5.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto5.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -128,7 +128,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/foto6.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto6.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -136,7 +136,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/foto7.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto7.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -144,7 +144,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/foto8.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto8.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -152,7 +152,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/foto9.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto9.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -160,7 +160,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/foto10.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto10.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -168,7 +168,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/foto13.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto13.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -176,7 +176,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/foto12.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto12.jpeg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -208,7 +208,7 @@ $(function() {
   <div class="row">
     <div class="col-sm-4">
       <p class="text-center"><strong>Davide</strong></p><br>
-        <img src="/immagini/davide.jpg" class="img-circle person" alt="Davide" width="255" height="255">
+        <img src="/immagini/azienda/altre_azienda/davide.jpg" class="img-circle person" alt="Davide" width="255" height="255">
       <div>
         <p>Fondatore dell'azienda</p>
         <p>Amante della natura</p>
@@ -217,7 +217,7 @@ $(function() {
     </div>
     <div class="col-sm-4">
       <p class="text-center"><strong>Simone</strong></p><br>
-        <img src="/immagini/agricoltore.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        <img src="/immagini/azienda/altre_azienda/agricoltore.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
       <div>
         <p>Operaio</p>
         <p>Abile agricoltore</p>
@@ -226,7 +226,7 @@ $(function() {
     </div>
     <div class="col-sm-4">
       <p class="text-center"><strong>Marco</strong></p><br>
-        <img src="/immagini/io.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        <img src="/immagini/azienda/altre_azienda/io.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
       <div>
         <p>Segretario</p>
         <p>Esperto informatico</p>
@@ -307,7 +307,7 @@ $(function() {
 </div>
     <div align="center"  >
                 <button   id="toTop"  class="btn btn-secondary my-n5">
-            <img src="/immagini/arrow_up_white2x.png" alt="topArrow" width="20" height="20" class="d-inline-block align-top">
+            <img src="/immagini/icone_sito/arrow_up_white2x.png" alt="topArrow" width="20" height="20" class="d-inline-block align-top">
             Torna all'inizio
            
             </button>
