@@ -31,7 +31,7 @@ else {  ?>
 
 
 <title>Conti Eden Project</title>
-<link rel="icon" href="/immagini/logo3.png">
+<link rel="icon" href="/immagini/loghi_azienda/logo3.png">
   <meta charset="utf−8" />
   <meta name="viewport" content="width=device−width, initial−scale=1.0" />
   <!--width=device−width rende responsive la pagina     -->
@@ -73,7 +73,7 @@ else {  ?>
 
      
         <div class="carousel-item active">
-          <a href="/prodotti/scheda_prodotto.php?nome=6"> <img class="d-block w-100 h-50" src="immagini/mieleevidenza.jpeg" alt="First slide" ></a>
+          <a href="/prodotti/scheda_prodotto.php?nome=23"> <img class="d-block w-100 h-50" src="immagini/carousel_inevidenza/mieleevidenza.jpeg" alt="First slide" ></a>
           <div class= "carousel-caption d-none d-md-block">
             <h3 style=" font-weight:bold;">Miele di agrumi dei monti Iblei</h3>
             <p style=" font-style:italic;"> Direttamente dall'azienda Pagliaro di Sorino (Siracusa) </p>
@@ -86,7 +86,7 @@ else {  ?>
 
         <div class="carousel-item">
           <!--secondo elemnto-->
-          <a href="/prodotti/scheda_prodotto.php?nome=8"><img class="d-block w-100 h-50" src="immagini/ribes.jpeg" alt="Second slide"></a>
+          <a href="/prodotti/scheda_prodotto.php?nome=13"><img class="d-block w-100 h-50" src="immagini/carousel_inevidenza/ribes.jpeg" alt="Second slide"></a>
           <div class= "carousel-caption d-none d-md-block">
             <h3 style="font-weight:bold;">Ribes rossi</h3>
             <p style="font-style:italic;"> Li userete per una panna cotta o per una marmellata? </p>
@@ -96,7 +96,7 @@ else {  ?>
 
         <div class="carousel-item">
           <!--terzo elemnto-->
-          <a href="/prodotti/scheda_prodotto.php?nome=9"><img class="d-block w-100 h-50" src="immagini/melanzane.jpeg" alt="Second slide"></a>
+          <a href="/prodotti/scheda_prodotto.php?nome=2"><img class="d-block w-100 h-50" src="immagini/carousel_inevidenza/melanzane.jpeg" alt="Second slide"></a>
           <div class= "carousel-caption d-none d-md-block">
             <h3 style="font-weight:bold;">Melanzane</h3>
             <p style="font-style:italic;">Direttamente dai nostri campi melanzane ovali nere e tonde bianche </p>
@@ -129,7 +129,7 @@ else {  ?>
       <div class="row">
         <div class="col-sm-4 col-xs-12">
         <div class="card">
-          <img class="card-img-top" src="immagini/frutta.jpg" alt="Card image cap">
+          <img class="card-img-top" src="immagini/prodotti/categorie/frutta.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Frutta</h5>
             <p class="card-text">Assapora la nostra deliziosa frutta, ti sorprenderemo </p>
@@ -139,7 +139,7 @@ else {  ?>
         </div>
         <div class="col-sm-4 col-xs-12">
         <div class="card">
-          <img class="card-img-top" src="immagini/verdura.jpg" alt="Card image cap">
+          <img class="card-img-top" src="immagini/prodotti/categorie/verdura.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Verdura</h5>
             <p class="card-text">Gusta il sapore autentico della verdura dei nostri campi</p>
@@ -149,7 +149,7 @@ else {  ?>
         </div>
         <div class="col-sm-4 col-xs-12">
         <div class="card">
-          <img class="card-img-top" src="immagini/altro.jpg" alt="Card image cap">
+          <img class="card-img-top" src="immagini/prodotti/categorie/altro.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Altro</h5>
             <p class="card-text">Uova, farina, miele, scopri tutti i nostri prodotti</p>
