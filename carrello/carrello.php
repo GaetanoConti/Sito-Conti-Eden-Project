@@ -42,7 +42,7 @@
 
 <head>
   <title>Carrello</title>
-  <link rel="icon" href="/immagini/logo3.png">
+  <link rel="icon" href="/immagini/loghi_azienda/logo3.png">
   <meta charset="utf−8" />
   <meta name="viewport" content="width=device−width, initial−scale=1.0" />
   <link rel="stylesheet" type="text/css" href="/css_site/index_style.css" />
@@ -183,7 +183,7 @@ body {
                                 <div class="col-6">
                                     <h4 class="card-title"><?php echo $row['nome'] ?></h4>
                                     <h5><?php echo $row['categoria'] ?></h5>
-                                    <?php $file="/immagini\\";
+                                    <?php $file="/immagini/prodotti/";
                                 $file .= $row['fotoprodotto'];?> 
                             <img  src= <?php echo $file; ?> width="350" height="250"  class="card-img-top" alt="...">  
                                 </div>
@@ -195,13 +195,13 @@ body {
                                     <h5>Quantità:</h5>
                                     </label>
                                     <div class="col-5">
-                                    <input type="number" id="<?php echo $row['id'] ?>" name="quantita[<?php echo $row['id'] ?>]" min=0 value="<?php echo $_SESSION['cart'][$row['id']]['quantita'] ?>" />
+                                    <input type="number" id="<?php echo $row['id'] ?>" name="quantita[<?php echo $row['id'] ?>]" min=0  step=0.1 value="<?php echo $_SESSION['cart'][$row['id']]['quantita'] ?>" />
                                     </div> <br>
                                     
                                     <div class="col-8">
                                     
                                     <button type="submit" name="submit" id="<?php echo $row['id'] ?>"  class="btn btn-primary" onclick="modificaquantita(this.id)">
-                                        <img src="/immagini/icona_rimuovi_carrello2x_white.png" alt="carrello" width="20" height="20"
+                                        <img src="/immagini/icone_sito/icona_rimuovi_carrello2x_white.png" alt="carrello" width="20" height="20"
                                         class="d-inline-block align-top">
                                         Rimuovi </button>
                                     </div>
@@ -298,7 +298,7 @@ body {
 
 <div align="center" >
                 <button   id="toTop"  class="btn btn-secondary">
-            <img src="/immagini/arrow_up_white2x.png" alt="topArrow" width="20" height="20" class="d-inline-block align-top">
+            <img src="/immagini/icone_sito/arrow_up_white2x.png" alt="topArrow" width="20" height="20" class="d-inline-block align-top">
             Torna all'inizio
             </button>
                 </div>
@@ -369,10 +369,19 @@ $("#toTop").click(function() {
 <?php
  }
  else {
+  if (isset($_COOKIE['username']) || isset($_SESSION['username'])) {
+    ?>
+    <script>var fileNavbar='/navbars/navbar_login.php';</script> 
+    <?php 
+      }
+  else {  ?>
+  <script>      var fileNavbar='/navbars/navbar_registrazione.php';  </script> 
+  <?php
+  }
      ?>
      <head>
      <title>Carrello</title>
-     <link rel="icon" href="/immagini/logo3.png">
+     <link rel="icon" href="/immagini/loghi_azienda/logo3.png">
     <meta charset="utf−8" />
     <meta name="viewport" content="width=device−width, initial−scale=1.0" />
     <link rel="stylesheet" type="text/css" href="/css_site/carrello.css" />
@@ -380,7 +389,6 @@ $("#toTop").click(function() {
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script>var fileNavbar='/navbars/navbar_login.php';</script> 
      <script>
 
         $(function() {
@@ -425,7 +433,7 @@ body {
                     <h5>Il tuo carrello</h5>
                 </div>
                 <div class="card-body cart">
-                    <div class="col-sm-12 empty-cart-cls text-center"> <img src="/immagini/empty-cart.png" width="130" height="130" class="img-fluid mb-4 mr-3">
+                    <div class="col-sm-12 empty-cart-cls text-center"> <img src="/immagini/icone_sito/empty-cart.png" width="130" height="130" class="img-fluid mb-4 mr-3">
                         <h3><strong>Il tuo carrello è vuoto</strong></h3>
                         <h4>Inizia ad acquistare i nostri prodotti!</h4> <a href="/index.php" class='btn btn-success'data-abc="true">Continua a fare acquisti</a>
                     </div>
