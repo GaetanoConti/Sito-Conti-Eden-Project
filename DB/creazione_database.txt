@@ -35,7 +35,7 @@ create table accounts (
 
 create table ordini (
 	id serial not null primary key,
-	data timestamp not null,
+	data timestamp not null default CURRENT_TIMESTAMP,
 	cliente varchar(100) not null,
 	telefono bigint not null,
 	modalita varchar(50) not null,
