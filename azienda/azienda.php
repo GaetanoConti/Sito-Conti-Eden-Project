@@ -80,7 +80,7 @@ $(function() {
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="/immagini/azienda/carousel/foto11.jpeg" alt="New York" width="1200" height="700">
+        <img src="/immagini/azienda/carousel/foto11.jpeg" alt="foto_azienda" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p>Un bellissimo campo di insalate Conti Eden Project</p>
@@ -88,7 +88,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/azienda/carousel/foto1.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto1.jpeg" alt="foto_azienda" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -96,7 +96,7 @@ $(function() {
       </div>
     
       <div class="item">
-        <img src="../immagini/azienda/carousel/foto2.jpeg" alt="Los Angeles" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto2.jpeg" alt="foto_azienda" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -104,7 +104,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/azienda/carousel/foto3.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto3.jpeg" alt="foto_azienda" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -112,7 +112,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/azienda/carousel/foto4.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto4.jpeg" alt="foto_azienda" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -120,7 +120,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/azienda/carousel/foto5.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto5.jpeg" alt="foto_azienda" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -128,7 +128,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/azienda/carousel/foto6.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto6.jpeg" alt="foto_azienda" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -136,7 +136,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/azienda/carousel/foto7.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto7.jpeg" alt="foto_azienda" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -144,7 +144,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/azienda/carousel/foto8.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto8.jpeg" alt="foto_azienda" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -152,7 +152,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/azienda/carousel/foto9.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto9.jpeg" alt="foto_azienda" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -160,7 +160,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/azienda/carousel/foto10.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto10.jpeg" alt="foto_azienda" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -168,7 +168,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/azienda/carousel/foto13.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto13.jpeg" alt="foto_azienda" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
@@ -176,7 +176,7 @@ $(function() {
       </div>
 
       <div class="item">
-        <img src="../immagini/azienda/carousel/foto12.jpeg" alt="Chicago" width="1200" height="700">
+        <img src="../immagini/azienda/carousel/foto12.jpeg" alt="foto_azienda" width="1200" height="700">
         <div class="carousel-caption">
           <h3>La nostra azienda</h3>
           <p></p>
