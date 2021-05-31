@@ -270,7 +270,7 @@ body {
           <label for="indirizzo" id="indirizzoLabel">
               <h5><b>Indirizzo: </b></h5>
             </label>
-          <input name="Indirizzo" id="indirizzo"  size="30" type="text" style="margin-left: 3%;" ><br>
+          <input name="indirizzo" id="indirizzo"  size="30" type="text" style="margin-left: 3%;" ><br>
 
             <label for="telefono">
               <h5><b>Telefono: </b></h5>
