@@ -189,30 +189,35 @@ body {
                                 </div>
                                 
                                <div class="col">
+                                 <br><br><br><br>
+                                
                                <h5> Prezzo prodotto: <?php echo $row['prezzo'] ?> €</h5>
                                <h5> Prezzo totale: <?php echo $row['prezzo']  * $_SESSION['cart'][$row['id']]['quantita'] ?> €</h5>
-                                    <label for="inputQuantita" class="col-8 col-form-label">
+                                    <label for="inputQuantita" >
                                     <h5>Quantità:</h5>
                                     </label>
-                                    <div class="col-5">
-                                    <input type="number" id="<?php echo $row['id'] ?>" name="quantita[<?php echo $row['id'] ?>]" min=0  step=0.1 value="<?php echo $_SESSION['cart'][$row['id']]['quantita'] ?>" />
-                                    </div> <br>
+                            
+                                    <input type="number" id="<?php echo $row['id'] ?>" name="quantita[<?php echo $row['id'] ?>]" min=0  step=0.1 value="<?php echo $_SESSION['cart'][$row['id']]['quantita'] ?>", style="width:80px;" />
+                                  <br>
                                     
                                     <div class="col-8">
                                     
-                                    <button type="submit" name="submit" id="<?php echo $row['id'] ?>"  class="btn btn-primary" onclick="modificaquantita(this.id)">
+                                    <button type="submit" name="submit" id="<?php echo $row['id'] ?>"  class="btn btn-primary" onclick="modificaquantita(this.id)" style="margin-left:-12px">
                                         <img src="/immagini/icone_sito/icona_rimuovi_carrello2x_white.png" alt="carrello" width="20" height="20"
-                                        class="d-inline-block align-top">
+                                        class="d-inline-block align-top" >
                                         Rimuovi </button>
                                     </div>
                                 </div>
                                 </div>
                             </div>
                             </div>
+                            <br>
                     <?php 
                           
                     } 
+                    
         ?> 
+
                      </div>
       
 
@@ -252,6 +257,7 @@ body {
               </div>
           </div>
         </div>
+        <br>
 
         
 
