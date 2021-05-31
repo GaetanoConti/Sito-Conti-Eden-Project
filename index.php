@@ -79,10 +79,6 @@ else {  ?>
             <p style=" font-style:italic;"> Direttamente dall'azienda Pagliaro di Sorino (Siracusa) </p>
          </div>
         </div>
-        <!-- problema se si mette la dimensioen dell'immagine a d-block w-75 h-50
-          e si toglie il ridiemnsioamento fatto dopo l'allineamento viene formattato meglio ma i tatsti 
-        non sranno sull'immagine ma lateralmente -->
-
 
         <div class="carousel-item">
           <!--secondo elemnto-->
