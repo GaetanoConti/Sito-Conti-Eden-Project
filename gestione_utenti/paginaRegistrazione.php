@@ -1,12 +1,13 @@
 <?php
 session_start();
+if (empty($_SESSION['cart'])) {
+  $num = 0;
+}
+else {
+  $num = count($_SESSION['cart']);
+}
 if (empty($_SESSION['registrationerror'])) {
-  if (empty($_SESSION['cart'])) {
-    $num = 0;
-  }
-  else {
-    $num = count($_SESSION['cart']);
-  }
+ 
   ?>
  
  <?php

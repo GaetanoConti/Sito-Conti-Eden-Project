@@ -1,13 +1,13 @@
 <?php
 session_start();
-
+if (empty($_SESSION['cart'])) {
+  $num = 0;
+}
+else {
+  $num = count($_SESSION['cart']);
+}
 if (empty($_SESSION['loginerror'])) {
-  if (empty($_SESSION['cart'])) {
-    $num = 0;
-  }
-  else {
-    $num = count($_SESSION['cart']);
-  }
+ 
   ?>
  
   <?php
@@ -140,9 +140,11 @@ else {
 					<div class="d-flex justify-content-center links">
 						Non hai un account? <a href="/gestione_utenti/paginaRegistrazione.php" class="ml-2">Registrati</a>
 					</div>
+          <!--
 					<div class="d-flex justify-content-center links">
 						<a href="#">Hai dimenticato la password?</a>
 					</div>
+        -->
 				</div>
 			</div>
 		</div>
