@@ -15,7 +15,7 @@ _L'idea è di creare un sito interattivo che permetta ad un azienda di prodotti 
   * **Ricerca**:
     * Una volta effettutata una ricerca l'utente deve poter:
       * Filtrare i prodotti per tipologia, quantità disponibile e prezzo (al kg)
-      * EVisualizzare le schede prodotto con nome, foto e quantità disponibili
+      * Visualizzare le schede prodotto con nome, foto e quantità disponibili
       * Entrare in una scheda prodotto
   * **Scheda prodotto**:
     * Nella scheda prodotto ci dovrà essere:
