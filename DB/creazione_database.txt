@@ -38,17 +38,41 @@ create table ordini (
 	data timestamp not null default CURRENT_TIMESTAMP,
 	cliente varchar(100) not null,
 	telefono bigint not null,
-	modalita varchar(50) not null,
 	giorno date not null,
 	fasciaoraria varchar(20) not null,
 	prezzofinale real not null,
-	domicilio varchar(100),
 	numprodotti integer not null
 )
 
 #############CREAZIONE DATABASE ORDINI_PRODOTTI########
 
 create table ordini_prodotti (
+	id serial not null primary key,
+	id_ordine integer not null,
+	cliente varchar(100) not null,
+	prodotto integer not null,
+	nomeprodotto varchar(100) not null,
+	prezzo real not null,
+	quantita real not null,
+	prezzototale real not null
+)
+
+#############CREAZIONE DATABASE ARCHIVIO_ORDINI#############
+
+create table archivio_ordini (
+	id serial not null primary key,
+	data timestamp not null default CURRENT_TIMESTAMP,
+	cliente varchar(100) not null,
+	telefono bigint not null,
+	giorno date not null,
+	fasciaoraria varchar(20) not null,
+	prezzofinale real not null,
+	numprodotti integer not null
+)
+
+#############CREAZIONE DATABASE ARCHIVIO_ORDINI_PRODOTTI########
+
+create table archivio_ordini_prodotti (
 	id serial not null primary key,
 	id_ordine integer not null,
 	cliente varchar(100) not null,
