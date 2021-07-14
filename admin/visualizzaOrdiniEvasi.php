@@ -29,11 +29,11 @@ $datainizio=$_POST['datainizio'];
 $datafine=$_POST['datafine'];
 
 // if ($modalita <> 'tutti') {
-    $query="select ord.id, acc.nome, acc.cognome, ord.telefono, ord.giorno, ord.fasciaoraria, ord.prezzofinale from ordini ord,accounts acc where ord.giorno >= '$datainizio' and ord.giorno <= '$datafine' and ord.cliente = acc.email order by ord.giorno, ord.fasciaoraria DESC;"; 
+    $query="select ord.id, acc.nome, acc.cognome, ord.telefono, ord.giorno, ord.fasciaoraria, ord.prezzofinale from archivio_ordini ord,accounts acc where ord.giorno >= '$datainizio' and ord.giorno <= '$datafine' and ord.cliente = acc.email order by ord.giorno, ord.fasciaoraria DESC;"; 
     $res = pg_exec($query);
     $nrows = pg_numrows($res);?>
     
-    <h1>Elenco ordini:</h1>
+    <h1>Elenco ordini evasi:</h1>
     <hr style="height:1px;border:none;color:#333;background-color:#333;">
     <?php
     if($nrows != 0) { 
@@ -72,7 +72,7 @@ $datafine=$_POST['datafine'];
     
       <?php
         $id = $row['id'];
-        $query2="select o.id,o.nomeprodotto,o.quantita,o.prezzototale,p.tipoquantita from ordini_prodotti o, prodotti p where id_ordine='$id' and p.id=o.prodotto";
+        $query2="select o.id,o.nomeprodotto,o.quantita,o.prezzototale,p.tipoquantita from archivio_ordini_prodotti o, prodotti p where id_ordine='$id' and p.id=o.prodotto";
         $res2 = pg_exec($query2);
         $nrows2 = pg_numrows($res2);
     
@@ -95,9 +95,6 @@ $datafine=$_POST['datafine'];
                 <br>
                 <br>
                 <br>
-                <form  method="POST" action="/admin/evadiordine.php?id=<?php echo $id; ?>">
-    <input type="submit" class="btn btn-primary" value="Evadi"  style="height:50px; width:250px; background-color:yellow;margin:auto;display:block" />
-      </form>
                 <hr style="height:1px;border:none;color:#333;background-color:#333;">
                 
                 <?php

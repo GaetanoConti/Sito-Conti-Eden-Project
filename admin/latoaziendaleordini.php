@@ -22,28 +22,35 @@ else {
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
-
     <div class="container" style="text-align:center">
         <h1>Gestione ordini</h1>
         <p><h2>Da questa pagina è possibile visualizzare gli ordini</h2></p>
         <hr style="height:1px;border:none;color:#333;background-color:#333;">
         <br>
         <br>
-
+    
+        <form action="/admin/ordinidelgiorno.php">
+    <input type="submit" class="btn btn-primary btn-" value="Ordini del giorno"  style="height:50px; width:250px" />
+      </form>
+      <br>
+      <form action="/admin/ordinididomani.php">
+    <input type="submit" class="btn btn-primary" value="Ordini di domani" style="height:50px; width:250px" />
+      </form>
         <form action="/admin/visualizzaOrdini.php" method="POST">
         <div>
             <h2>Filtra gli ordini per: </h2>
         <label for="date">
               <h5><b>Giorno di inizio:</b></h5>
             </label>
-            <input type="date" name="datainizio" id="giorno"  style="margin-left: 3%;" required><br>
+            <input type="date" name="datainizio" id="giorno"  min="<?= date('Y-m-d'); ?>" style="margin-left: 3%;" required><br>
 
         <label for="date">
               <h5><b>Giorno di fine:</b></h5>
             </label>
-            <input type="date" name="datafine" id="giorno" style="margin-left: 4%;" required><br>
+            <input type="date" name="datafine" id="giorno" style="margin-left: 4%;"  min="<?= date('Y-m-d'); ?>" required><br>
         </div>
         <div class="form-group row">
+        <!--
                 <div class="col">
                   <div>
                     <h5><b>Metodo di acquisto</b></h5>
@@ -62,6 +69,7 @@ else {
                       <h4>Tutti</h4>
                     </label>
                   </div>
+                  -->
                 </div>
                 <button type="submit" class="btn btn-primary" >Visualizza </button>
               </div>
