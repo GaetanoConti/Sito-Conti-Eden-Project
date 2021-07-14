@@ -50,30 +50,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  <script>
-      $(document).ready(function(){
-
-  
-        $('[id="domicilio"]').on('change', function() {
-        $('#indirizzo').toggle(this.checked);
-        }).change();
-
-        $('[id="domicilio"]').on('change', function() {
-        $('#indirizzoLabel').toggle(this.checked);
-        }).change();
-        
-
-
-        $('[id="ritira"]').on('change', function() {
-        $('#indirizzo').hide(this.checked);
-        }).change();
-
-        $('[id="ritira"]').on('change', function() {
-        $('#indirizzoLabel').hide(this.checked);
-        }).change();
-
-});
-    </script>
 
 <script type="text/javascript" lang="javascript">
     function modificaquantita(id) {
@@ -103,16 +79,6 @@
                 alert("Inserire fascia oraria"); 
                 return false; 
                 } 
-            
-            if (valore == null) {
-            alert("Selezionare un metodo di consegna");
-            return false;
-            }
-
-            if (document.registr.domicilio.checked && document.registr.indirizzo.value=="") {
-                alert("Per la consegna a domicilio è necessario inserire un indirizzo!");
-                return false;
-            }
     
 }
     
@@ -236,25 +202,6 @@ body {
 
               <h3>Numero di prodotti: <?php echo count($_SESSION['cart']) ?></h3>
               <h3>Totale <?php echo $totalprice ?> € </h3>
-              <div class="form-group row">
-                <div class="col">
-                  <div>
-
-                    <h4>Seleziona un metodo di acquisto</h4>
-                    <input type="radio" id="ritira" name="tipoVendita" value="Ritira in negozio" onClick="valore=this.value;">
-                    <label for="ritira" style="margin-right:100px;">
-                      <h4>Ritira</h4>
-                    </label>
-
-                    <input type="radio" id="domicilio" name="tipoVendita" value="Domicilio" onClick="valore=this.value;">
-                    <label for="ritira">
-                      <h4>A domicilio</h4>
-                    </label>
-                  </div>
-
-
-                </div>
-              </div>
           </div>
         </div>
         <br>
@@ -267,11 +214,6 @@ body {
         <div class="card4">
 
           <div class="card-body">
-          <label for="indirizzo" id="indirizzoLabel">
-              <h5><b>Indirizzo: </b></h5>
-            </label>
-          <input name="indirizzo" id="indirizzo"  size="30" type="text" style="margin-left: 3%;" ><br>
-
             <label for="telefono">
               <h5><b>Telefono: </b></h5>
             </label>

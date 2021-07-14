@@ -45,13 +45,11 @@ else {
             $telefono = $_POST["telefono"];
             $data = $_POST["data"];
             $orario = $_POST["orario"];
-            $modalita = $_POST["tipoVendita"];
             $numprodotti = count($_SESSION['cart']);
-            $domicilio = $_POST["indirizzo"] ?? null;
 
-            $q2 = "insert into ordini(id,cliente,telefono,modalita,giorno,fasciaoraria,prezzofinale, domicilio, numprodotti) values($1,$2,$3,$4,$5,$6,$7,$8,$9)";
+            $q2 = "insert into ordini(id,cliente,telefono,giorno,fasciaoraria,prezzofinale, numprodotti) values($1,$2,$3,$4,$5,$6,$7)";
             $data = pg_query_params($dbconn, $q2, 
-                array($newgid,$cliente, $telefono, $modalita, $data, $orario, $totalprice, $domicilio, $numprodotti));
+                array($newgid,$cliente, $telefono, $data, $orario, $totalprice, $numprodotti));
 
 
             if ($data) {
