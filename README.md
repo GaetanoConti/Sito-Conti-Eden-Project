@@ -1,20 +1,20 @@
 # Sito Conti Eden Project
 Sito di prenotazione prodotti per azienda ortofrutticola locale
 ## Idea
-_L'idea è di creare un sito interattivo che permetta ad un azienda di prodotti ortofrutticoli locale e ai suoi clienti di gestire le prenotazioni sui propri prodotti, per poi acquistarli direttamente in negozio oppure farseli consegnare a domicilio_
+_L'idea è di creare un sito interattivo che permetta ad un azienda di prodotti ortofrutticoli locale e ai suoi clienti di gestire le prenotazioni sui propri prodotti, per poi acquistarli direttamente in negozio_
 ***
 ## Il sito dovrà avere la seguente struttura:
   * **Homepage**:
     * L'homepage dovrà contenere:
       * Il logo aziendale  
-      * Una barra di ricerca, dove l'utente può cercare un prodotto scrivendo il suo nome
+      * Una barra di ricerca, dove l'utente può cercare un prodotto scrivendo il suo nome //DA FARE
       * Le categorie principali in cui sono divisi i prodotti in vendita
-      * I prodotti in evidenza in quel momento, con foto e quantità
+      * I prodotti in evidenza in quel momento, con foto e descrizione
       * Una sezione in cui fare login e registrarsi
       * Una sezione di informazioni su azienda e contatti
   * **Ricerca**:
-    * Una volta effettutata una ricerca l'utente deve poter:
-      * Filtrare i prodotti per tipologia, quantità disponibile e prezzo (al kg)
+    * Una volta effettutata una ricerca l'utente deve poter: 
+      * Filtrare i prodotti per tipologia, quantità disponibile e prezzo (al kg) //DA FARE
       * Visualizzare le schede prodotto con nome, foto e quantità disponibili
       * Entrare in una scheda prodotto
   * **Scheda prodotto**:
@@ -27,7 +27,8 @@ _L'idea è di creare un sito interattivo che permetta ad un azienda di prodotti 
   * **Carrello**:
     * Nel carrello ci dovrà essere:
       * La lista dei prodotti selezionati, con le relative quantità
-      * Una checkbox per dire se si vuole ordinare da asporto o per consegna
+      * Un riepilogo con prezzo totale e numero di prodotti
+      * Una sezione dove inserire telefono, giorno e fascia oraria del ritiro
       * Un tasto per effettuare l'ordine
   * **Sezione personale Utente**:
     * Nella sezione profilo dell'utente sarà presente:
