@@ -91,7 +91,7 @@ or die('Could not connect: ' . pg_last_error());
                 <br>
                 <br>
                 <form  method="POST" action="/admin/evadiordine.php?id=<?php echo $id; ?>">
-    <input type="submit" class="btn btn-primary" value="Evadi"  style="height:50px; width:250px; background-color:yellow;margin:auto;display:block" />
+    <input type="submit" class="btn btn-primary" value="Evadi ordine"  style="height:50px; width:250px; background-color:yellow;margin:auto;display:block" />
       </form>
                 <hr style="height:1px;border:none;color:#333;background-color:#333;">
                 <?php
