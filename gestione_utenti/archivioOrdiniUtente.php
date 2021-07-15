@@ -10,7 +10,6 @@
     if (isset($_SESSION['username'])) {
       $mail = $_SESSION['username'];
     }
-    
   $q1 = "select * from accounts where email= $1";
   $result= pg_query_params($dbconn, $q1, array($mail));
   while($rows=pg_fetch_array($result,null, PGSQL_ASSOC))  {
@@ -25,7 +24,7 @@
       }
     }
 ?>
-<script>var fileNavbar='/navbars/navbar_login.php';</script>
+<script>var fileNavbar='/navbars/navbar_login.php';</script> 
 <script>
 function onChange() {
                 const password = document.querySelector('input[name=newpass]');
@@ -37,7 +36,6 @@ function onChange() {
                 }
                 }
 </script> 
-
 <html>
 <head>
     <meta charset="utf-8">
@@ -47,8 +45,9 @@ function onChange() {
     <link href="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel = "stylesheet" href = "/css_site/profilo_style.css">
     <link rel="stylesheet" type="text/css" href="/css_site/carrello.css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  
 
   <style>
 body {
@@ -61,18 +60,23 @@ body {
   grid-row-end: 6;
 }
 </style>
+
+
 </head>
 <body>
 <div class="container">
     <div class="main-body">
     <script>
+
 $(function() {
-  var includi2 =$('[data-include]');
-  jQuery.each(includi2, function(){
+  var includi =$('[data-include]');
+  jQuery.each(includi, function(){
 
   $(this).load(fileNavbar);
    });
 });
+
+
 </script>
 
 <div data-include="header"></div>
@@ -93,7 +97,7 @@ $(function() {
                     <img src="/immagini/loghi_azienda/logo.jpg" alt="Admin" class="rounded-circle" width="150">
                     <div class="mt-3">
                       <h4><?php echo $rows['nome']; ?> <?php echo $rows['cognome']; ?></h4>
-                      <a href="/gestione_utenti/archivioOrdiniUtente.php"> <button class="btn btn-success">Ordini passati</button></a>
+                      <a href="/gestione_utenti/profilo.php"> <button class="btn btn-success">Ordini in corso</button></a>
                     </div>
                   </div>
                 </div>
@@ -147,24 +151,23 @@ $(function() {
                     <div class="col-sm-9 text-secondary">
                     ********
                     <label  for="customControlInline" style="float:right"><a data-toggle="modal" data-target="#infoModal" href="#">Modifica password</a></label>
-				
+                
+                    </div>
                   </div>
                   </div>
-                </div>
                 
               </div>
               </div>
           </div>
           
-          <h3 style="margin-left:35%;"> Ordini in corso </h3>
+          <h3 style="margin-left:35%;">Ordini passati</h3>
           <div class="col-md-8" style="margin-left:33%;">
             <div class="card mb-3">
               <div class="card-body">
 
     <?php
     $cliente = $_SESSION['username'];
-    $dataoggi=date("Y/m/d");
-    $query="select ord.id, acc.email, ord.giorno, ord.fasciaoraria, ord.prezzofinale from ordini ord,accounts acc where acc.email = '$cliente'  and ord.cliente = acc.email and ord.giorno >= '$dataoggi' order by ord.giorno, ord.fasciaoraria DESC;"; 
+    $query="select ord.id, acc.email, ord.giorno, ord.fasciaoraria, ord.prezzofinale from archivio_ordini ord,accounts acc where acc.email = '$cliente'  and ord.cliente = acc.email order by ord.giorno, ord.fasciaoraria DESC;"; 
     $res = pg_exec($query);
     $nrows = pg_numrows($res);?>
     
@@ -202,7 +205,7 @@ $(function() {
     
       <?php
         $id = $row['id'];
-        $query2="select o.id,o.nomeprodotto,o.quantita,o.prezzototale,p.tipoquantita from ordini_prodotti o, prodotti p where id_ordine='$id' and p.id=o.prodotto";
+        $query2="select o.id,o.nomeprodotto,o.quantita,o.prezzototale,p.tipoquantita from archivio_ordini_prodotti o, prodotti p where id_ordine='$id' and p.id=o.prodotto";
         $res2 = pg_exec($query2);
         $nrows2 = pg_numrows($res2);
     
@@ -225,6 +228,11 @@ $(function() {
         <br>
         <br>
         <br>
+        <!-- RIPETI ORDINE, BUONA IDEA MA DA STUDIARE
+        <form  method="POST" action="/admin/evadiordine.php?id=<?php echo $id; ?>">
+    <input type="submit" class="btn btn-primary" value="Ripeti ordine"  style="height:50px; width:250px; background-color:green; margin:auto;display:block" />
+      </form>
+      -->
         <hr style="height:1px;border:none;color:#333;background-color:#333;"> 
         <?php
       }
@@ -235,18 +243,18 @@ $(function() {
               </div>
         </div>   
     </div>
-    </div>
+    </div>   
     </div>
     
     
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script type="text/javascript">
-
 <?php 
   }
 ?>
 </script>
+
 <br>
 <br>
 <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="modal"
@@ -329,4 +337,4 @@ $(function() {
   <!-- Copyright -->
 </footer>
 </body>
-</html>
+</html> 

@@ -13,7 +13,7 @@ if (empty($_SESSION['registrationerror'])) {
  <?php
 }
 else {
- session_destroy();
+ unset($_SESSION['registrationerror']);
  ?>
 <script>      var errore='/gestione_utenti/erroreregistrazione.html';  </script> 
 <?php
