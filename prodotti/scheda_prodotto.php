@@ -68,14 +68,21 @@ else {  ?>
 $(function() {
   var includi =$('[data-include]');
   jQuery.each(includi, function(){
-
   $(this).load(fileNavbar);
    });
 });
-
-
 </script>
+<?php
+  if ($rows['tipoquantita'] == 'chilo') {
+    $min=0.1; 
+    $step=0.1;
+  }
+  else {
+    $min=1; 
+    $step=1;
+  }
 
+?>
 <div data-include="header"></div>
 
 </head>
@@ -123,7 +130,7 @@ $(function() {
         <p style="font-size:18px"><?php echo $rows['descrizione'];?> </p>
         <label for="example-number-input"><h4>Quantità in     <?php  echo $rows['tipoquantita'];?>:  </h4> </label>
         <form action="/carrello/transizionecarrello.php?action=add&id=<?php echo $id ?>" method="POST" name="registr">
-        <input name ="inputquantita" class="col-2" class="form-control"  type="number" value="" max= <?php echo $rows['quantita'] ?> min="0.1" step="0.1" id="example-number-input" required>
+        <input name ="inputquantita" id = "mySlider" class="col-2" class="form-control"  type="number" value="" max= <?php echo $rows['quantita'] ?> min=<?php echo $min ?> step=<?php echo $step ?> required>
         <?php  echo "<h5>Disponibili: ";  echo  $rows['quantita']; echo ' '; echo $rows['tipoquantita']; echo "</h5>"; ?>
 
         <?php echo "<h3>"; echo $rows['prezzo']; echo " € a "; echo $rows['tipoquantita']; echo "</h3>";?>
@@ -168,10 +175,10 @@ $(function() {
     <div class="card-header" style="background-color: #28a745">
                     <h5 style="text-align: center; color: white ">Prodotti consigliati</h5>
                 </div>
-  <div class="row row-cols-1 row-cols-md-3 g-4 my-3">
+  <div class="row row-cols-md-auto">
 
               <?php  if($nRows != 0) {
-                    for($i=0;$i<3;$i++){
+                    for($i=0;$i<6;$i++){
                       $resRandom= pg_query($dbconn, $qrandom);
                       $nRows = pg_numrows($resRandom);
                       $rowsRandom = pg_fetch_array($resRandom);

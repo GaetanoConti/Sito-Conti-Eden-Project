@@ -79,6 +79,7 @@ $nrows = pg_numrows($res);
     margin: 20px;
   }
 } 
+
     </style>
 
 <script>
@@ -121,8 +122,8 @@ $nrows = pg_numrows($res);
         </div>
 
         <br>
-        <div class="container-sm" >
-                <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="container-fluid" >
+                <div class="row row-cols-md-auto">
                     
               <?php  if($nrows != 0) {
                     for($i=0;$i<$nrows;$i++){

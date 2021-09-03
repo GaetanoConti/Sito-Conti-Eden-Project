@@ -156,8 +156,8 @@ $(function() {
               </div>
           </div>
           
-          <h3 style="margin-left:35%;"> Ordini in corso </h3>
-          <div class="col-md-8" style="margin-left:33%;">
+          <h3> Ordini in corso </h3>
+          <div class="col-md-8">
             <div class="card mb-3">
               <div class="card-body">
 

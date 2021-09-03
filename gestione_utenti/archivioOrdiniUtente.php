@@ -87,7 +87,9 @@ $(function() {
           <br>
           <br>
           <br>
-          <!-- /Breadcrumb -->
+          <br>
+          <br>
+                <!-- /Breadcrumb -->
     
           <div class="row gutters-sm">
             <div class="col-md-4 mb-3">
@@ -160,8 +162,8 @@ $(function() {
               </div>
           </div>
           
-          <h3 style="margin-left:35%;">Ordini passati</h3>
-          <div class="col-md-8" style="margin-left:33%;">
+          <h3>Ordini passati</h3>
+          <div class="col-md-8">
             <div class="card mb-3">
               <div class="card-body">
 
