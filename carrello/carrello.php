@@ -349,19 +349,18 @@ $("#toTop").click(function() {
 
 
         </script>
-
-        <div data-include="header"></div>
-
+        
+        <div data-include="header">
+        </div>
+      
         <style>
+          
 body {
   min-height: 100%;
   display: grid;
   grid-template-rows: 1fr auto;
 }
-.footer {
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
+
 </style>
     </head>
     <body style="background-color: #F6DAC1">
@@ -373,9 +372,9 @@ body {
         <br>
         <br>
         <br>
-        <div class="container-fluid mt-100">
-    <div class="row">
-        <div class="col-md-12">
+        <div class="container-fluid mt-100" >
+   
+       
             <div class="card">
                 <div class="card-header">
                     <h5>Il tuo carrello</h5>
@@ -388,16 +387,9 @@ body {
                 </div>
                 
             </div>
+      </div>
 
-
-            
-        </div>
-       
-    </div>
-
-    
-</div>
-<br>
+        <br>
         <br>
         <br>
         <br> 
@@ -407,7 +399,7 @@ body {
         <br>
         <br>
         <br>
-<footer class="bg-success text-center text-white" style="">
+<footer class="bg-success text-center text-white">
   <!-- Grid container -->
   <div class="container p-4 pb-0">
   <h4> Ci trovi anche qui </h4><br>
